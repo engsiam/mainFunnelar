@@ -5,7 +5,7 @@ import { WaveBackground } from "@/components/wave-background"
 
 export function AboutHero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-purple-200 to-purple-100 py-20">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#FC9F59] to-[#F9E0A6] py-20">
       <WaveBackground />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

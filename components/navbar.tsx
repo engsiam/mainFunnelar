@@ -45,7 +45,7 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center space-x-8">
             <NavLinks />
-            <Button size="sm" className="bg-primary hover:bg-primary/90 text-white">
+            <Button size="sm" className="bg-primary hover:bg-secondary text-white">
               Get Started
             </Button>
           </div>

@@ -6,7 +6,7 @@ import { WaveBackground } from "@/components/wave-background"
 
 export function CtaSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-purple-200 to-purple-100 relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-[#FC9F59] to-[#F9E0A6] relative overflow-hidden">
       <WaveBackground />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -24,7 +24,7 @@ export function CtaSection() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg"
+              className="bg-primary hover:bg-secondary text-white rounded-full px-8 py-6 text-lg"
               onClick={() => {
                 const popupButton = document.querySelector(".fixed.bottom-4.right-4") as HTMLButtonElement
                 if (popupButton) popupButton.click()

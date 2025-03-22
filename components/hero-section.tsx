@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { WaveBackground } from "@/components/wave-background"
-import { FallbackImage } from "@/components/fallback-image"
-import ClientOnly from "@/components/client-only"
+import ClientOnly from "@/components/client-only";
+import { FallbackImage } from "@/components/fallback-image";
+import { Button } from "@/components/ui/button";
+import { WaveBackground } from "@/components/wave-background";
+import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-purple-300 to-purple-100 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-gradient-to-br from-[#FC9F59] to-[#F9E0A6] py-20 md:py-32">
       <WaveBackground />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -22,7 +22,8 @@ export function HeroSection() {
                   In Amazon Sales
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 mb-8">
-                  Delivering stunning brands, relatable products, & results oriented marketing strategy & execution
+                  Delivering stunning brands, relatable products, & results
+                  oriented marketing strategy & execution
                 </p>
                 <div className="h-14 w-48 bg-primary rounded-full"></div>
               </div>
@@ -40,14 +41,17 @@ export function HeroSection() {
                 In Amazon Sales
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8">
-                Delivering stunning brands, relatable products, & results oriented marketing strategy & execution
+                Delivering stunning brands, relatable products, & results
+                oriented marketing strategy & execution
               </p>
               <Button
                 size="lg"
-                className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg"
+                className="g hover:bg-secondary text-white rounded-full px-8 py-6 text-lg"
                 onClick={() => {
-                  const popupButton = document.querySelector(".fixed.bottom-4.right-4") as HTMLButtonElement
-                  if (popupButton) popupButton.click()
+                  const popupButton = document.querySelector(
+                    ".fixed.bottom-4.right-4"
+                  ) as HTMLButtonElement;
+                  if (popupButton) popupButton.click();
                 }}
               >
                 Get a Free Consultation
@@ -84,6 +88,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

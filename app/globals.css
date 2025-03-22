@@ -10,9 +10,9 @@
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 267 100% 64%;
+    --primary: 178, 70%, 48%;
     --primary-foreground: 0 0% 98%;
-    --secondary: 240 4.8% 95.9%;
+    --secondary: 36, 89%, 54%;
     --secondary-foreground: 240 5.9% 10%;
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
@@ -70,8 +70,11 @@
 
 /* Add grid background pattern to match the screenshot */
 .grid-pattern-bg {
-  background-image: linear-gradient(to right, rgba(209, 213, 219, 0.1) 1px, transparent 1px),
+  background-image: linear-gradient(
+      to right,
+      rgba(209, 213, 219, 0.1) 1px,
+      transparent 1px
+    ),
     linear-gradient(to bottom, rgba(209, 213, 219, 0.1) 1px, transparent 1px);
   background-size: 40px 40px;
 }
-
