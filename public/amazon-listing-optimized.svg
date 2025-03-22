@@ -1,0 +1,63 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e8ff" />
+      <stop offset="100%" stop-color="#d8b4fe" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="white" />
+  
+  <!-- Amazon Listing Header -->
+  <rect x="0" y="0" width="800" height="60" fill="#232f3e" />
+  <text x="50" y="40" font-family="Arial" font-size="24" fill="white">amazon</text>
+  
+  <!-- Search Bar -->
+  <rect x="200" y="15" width="400" height="30" rx="15" fill="white" />
+  <text x="220" y="35" font-family="Arial" font-size="14" fill="#666">Search Amazon</text>
+  
+  <!-- Product Section -->
+  <rect x="50" y="80" width="700" height="500" rx="5" fill="#f9f9f9" />
+  
+  <!-- Product Images -->
+  <rect x="70" y="100" width="300" height="300" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="100" y="130" width="240" height="240" fill="url(#bg-gradient)" rx="10" />
+  <text x="220" y="250" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Product Image</text>
+  
+  <!-- Thumbnail Images -->
+  <rect x="70" y="420" width="60" height="60" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="140" y="420" width="60" height="60" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="210" y="420" width="60" height="60" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <rect x="280" y="420" width="60" height="60" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  
+  <!-- Product Info -->
+  <text x="400" y="120" font-family="Arial" font-size="20" fill="#333" width="350">Premium Health Supplement - Natural Ingredients for Immune Support and Energy Boost (60 Capsules)</text>
+  
+  <!-- Brand -->
+  <text x="400" y="160" font-family="Arial" font-size="14" fill="#0066c0">Brand: Health Essentials</text>
+  
+  <!-- Ratings -->
+  <text x="400" y="190" font-family="Arial" font-size="14" fill="#333">★★★★★ 4.8 (1,245 ratings)</text>
+  
+  <!-- Price -->
+  <text x="400" y="230" font-family="Arial" font-size="24" fill="#b12704">$29.99</text>
+  <text x="480" y="230" font-family="Arial" font-size="14" fill="#565959">List Price: $39.99</text>
+  
+  <!-- Availability -->
+  <text x="400" y="260" font-family="Arial" font-size="14" fill="#007600">In Stock</text>
+  
+  <!-- Buy Button -->
+  <rect x="400" y="280" width="150" height="40" rx="20" fill="#ffd814" />
+  <text x="475" y="305" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Add to Cart</text>
+  
+  <rect x="570" y="280" width="150" height="40" rx="20" fill="#ffa41c" />
+  <text x="645" y="305" font-family="Arial" font-size="16" fill="#333" text-anchor="middle">Buy Now</text>
+  
+  <!-- Bullet Points -->
+  <text x="400" y="350" font-family="Arial" font-size="16" fill="#333" font-weight="bold">About this item</text>
+  <text x="420" y="380" font-family="Arial" font-size="14" fill="#333">• Premium quality ingredients sourced from natural origins</text>
+  <text x="420" y="410" font-family="Arial" font-size="14" fill="#333">• Supports immune system function and boosts energy levels</text>
+  <text x="420" y="440" font-family="Arial" font-size="14" fill="#333">• 60 easy-to-swallow vegetarian capsules</text>
+  <text x="420" y="470" font-family="Arial" font-size="14" fill="#333">• Manufactured in FDA-registered facility</text>
+  <text x="420" y="500" font-family="Arial" font-size="14" fill="#333">• 100% satisfaction guarantee or your money back</text>
+</svg>
+

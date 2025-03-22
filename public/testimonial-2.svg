@@ -1,0 +1,27 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9d5ff" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+  </defs>
+  <circle cx="150" cy="150" r="150" fill="url(#bg-gradient)" />
+  
+  <!-- Stylized Male Portrait -->
+  <circle cx="150" cy="120" r="60" fill="#f9f9f9" stroke="#a855f7" stroke-width="2" />
+  <path d="M110 190 Q150 230 190 190" fill="#f9f9f9" stroke="#a855f7" stroke-width="2" />
+  
+  <!-- Hair -->
+  <path d="M100 90 L100 120 L200 120 L200 90 Q150 70 100 90" fill="#333" />
+  
+  <!-- Eyes -->
+  <circle cx="130" cy="110" r="5" fill="#333" />
+  <circle cx="170" cy="110" r="5" fill="#333" />
+  
+  <!-- Smile -->
+  <path d="M130 140 Q150 160 170 140" stroke="#333" stroke-width="2" fill="none" />
+  
+  <text x="150" y="250" font-family="Arial" font-size="18" fill="#333" text-anchor="middle">Michael Chen</text>
+  <text x="150" y="275" font-family="Arial" font-size="14" fill="#666" text-anchor="middle">Founder, KitchenInnovate</text>
+</svg>
+

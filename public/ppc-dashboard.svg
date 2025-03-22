@@ -1,0 +1,85 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e8ff" />
+      <stop offset="100%" stop-color="#d8b4fe" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f8fafc" />
+  
+  <!-- Dashboard Header -->
+  <rect x="0" y="0" width="800" height="80" fill="#a855f7" />
+  <text x="50" y="50" font-family="Arial" font-size="24" fill="white">Amazon PPC Campaign Dashboard</text>
+  
+  <!-- Main Content -->
+  <!-- Campaign Performance Card -->
+  <rect x="50" y="100" width="700" height="120" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <text x="70" y="130" font-family="Arial" font-size="18" fill="#333">Campaign Performance Overview</text>
+  
+  <!-- Metrics -->
+  <rect x="70" y="150" width="150" height="50" rx="5" fill="#f3e8ff" />
+  <text x="80" y="175" font-family="Arial" font-size="14" fill="#333">Impressions</text>
+  <text x="80" y="195" font-family="Arial" font-size="16" fill="#a855f7">1,245,678</text>
+  
+  <rect x="240" y="150" width="150" height="50" rx="5" fill="#f3e8ff" />
+  <text x="250" y="175" font-family="Arial" font-size="14" fill="#333">Clicks</text>
+  <text x="250" y="195" font-family="Arial" font-size="16" fill="#a855f7">42,567</text>
+  
+  <rect x="410" y="150" width="150" height="50" rx="5" fill="#f3e8ff" />
+  <text x="420" y="175" font-family="Arial" font-size="14" fill="#333">CTR</text>
+  <text x="420" y="195" font-family="Arial" font-size="16" fill="#a855f7">3.42%</text>
+  
+  <rect x="580" y="150" width="150" height="50" rx="5" fill="#f3e8ff" />
+  <text x="590" y="175" font-family="Arial" font-size="14" fill="#333">ACoS</text>
+  <text x="590" y="195" font-family="Arial" font-size="16" fill="#a855f7">18.5%</text>
+  
+  <!-- Charts -->
+  <!-- CTR Chart -->
+  <rect x="50" y="240" width="340" height="160" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <text x="70" y="270" font-family="Arial" font-size="18" fill="#333">Click-Through Rate (CTR)</text>
+  
+  <!-- Chart Axes -->
+  <line x1="70" y1="360" x2="350" y2="360" stroke="#94a3b8" stroke-width="1" />
+  <line x1="70" y1="360" x2="70" y2="290" stroke="#94a3b8" stroke-width="1" />
+  
+  <!-- Chart Data -->
+  <path d="M70 340 L100 330 L130 335 L160 320 L190 310 L220 300 L250 305 L280 295 L310 290 L340 285" stroke="#a855f7" stroke-width="2" fill="none" />
+  
+  <!-- ACoS Chart -->
+  <rect x="410" y="240" width="340" height="160" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <text x="430" y="270" font-family="Arial" font-size="18" fill="#333">Average Cost of Sale (ACoS)</text>
+  
+  <!-- Chart Axes -->
+  <line x1="430" y1="360" x2="710" y2="360" stroke="#94a3b8" stroke-width="1" />
+  <line x1="430" y1="360" x2="430" y2="290" stroke="#94a3b8" stroke-width="1" />
+  
+  <!-- Chart Data -->
+  <path d="M430 320 L460 325 L490 330 L520 315 L550 310 L580 305 L610 300 L640 295 L670 290 L700 285" stroke="#a855f7" stroke-width="2" fill="none" />
+  
+  <!-- Campaign List -->
+  <rect x="50" y="420" width="700" height="160" rx="10" fill="white" stroke="#e2e8f0" stroke-width="1" />
+  <text x="70" y="450" font-family="Arial" font-size="18" fill="#333">Top Performing Campaigns</text>
+  
+  <!-- Table Header -->
+  <rect x="70" y="470" width="660" height="30" rx="5" fill="#f3e8ff" />
+  <text x="90" y="490" font-family="Arial" font-size="14" fill="#333">Campaign Name</text>
+  <text x="300" y="490" font-family="Arial" font-size="14" fill="#333">Spend</text>
+  <text x="400" y="490" font-family="Arial" font-size="14" fill="#333">Sales</text>
+  <text x="500" y="490" font-family="Arial" font-size="14" fill="#333">ACoS</text>
+  <text x="600" y="490" font-family="Arial" font-size="14" fill="#333">ROAS</text>
+  
+  <!-- Table Row 1 -->
+  <text x="90" y="520" font-family="Arial" font-size="14" fill="#333">Product Launch Campaign</text>
+  <text x="300" y="520" font-family="Arial" font-size="14" fill="#333">$1,245</text>
+  <text x="400" y="520" font-family="Arial" font-size="14" fill="#333">$8,750</text>
+  <text x="500" y="520" font-family="Arial" font-size="14" fill="#333">14.2%</text>
+  <text x="600" y="520" font-family="Arial" font-size="14" fill="#333">7.0x</text>
+  
+  <!-- Table Row 2 -->
+  <text x="90" y="550" font-family="Arial" font-size="14" fill="#333">Brand Defense Campaign</text>
+  <text x="300" y="550" font-family="Arial" font-size="14" fill="#333">$875</text>
+  <text x="400" y="550" font-family="Arial" font-size="14" fill="#333">$5,230</text>
+  <text x="500" y="550" font-family="Arial" font-size="14" fill="#333">16.7%</text>
+  <text x="600" y="550" font-family="Arial" font-size="14" fill="#333">6.0x</text>
+</svg>
+

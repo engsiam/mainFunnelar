@@ -1,0 +1,45 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" opacity="0.2" />
+      <stop offset="100%" stop-color="#7e22ce" opacity="0.4" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg-gradient)" />
+  
+  <!-- Dashboard Elements -->
+  <rect x="50" y="50" width="700" height="500" rx="15" fill="white" opacity="0.9" />
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="700" height="80" rx="15" fill="#a855f7" />
+  <text x="100" y="100" font-family="Arial" font-size="24" fill="white">Funnelar Analytics Dashboard</text>
+  
+  <!-- Main Content -->
+  <rect x="80" y="160" width="300" height="150" rx="10" fill="#f3e8ff" />
+  <text x="100" y="190" font-family="Arial" font-size="18" fill="#333">Total Revenue</text>
+  <text x="100" y="230" font-family="Arial" font-size="32" fill="#a855f7">$1,245,678</text>
+  <text x="100" y="260" font-family="Arial" font-size="16" fill="#22c55e">↑ 24% from previous year</text>
+  
+  <rect x="420" y="160" width="300" height="150" rx="10" fill="#f3e8ff" />
+  <text x="440" y="190" font-family="Arial" font-size="18" fill="#333">Conversion Rate</text>
+  <text x="440" y="230" font-family="Arial" font-size="32" fill="#a855f7">18.7%</text>
+  <text x="440" y="260" font-family="Arial" font-size="16" fill="#22c55e">↑ 3.2% from previous year</text>
+  
+  <!-- Chart -->
+  <rect x="80" y="340" width="640" height="180" rx="10" fill="#f3e8ff" />
+  
+  <!-- Chart Axes -->
+  <line x1="100" y1="480" x2="700" y2="480" stroke="#94a3b8" stroke-width="1" />
+  <line x1="100" y1="480" x2="100" y2="360" stroke="#94a3b8" stroke-width="1" />
+  
+  <!-- Chart Data -->
+  <path d="M100 440 L150 430 L200 420 L250 400 L300 410 L350 390 L400 370 L450 360 L500 380 L550 370 L600 350 L650 340 L700 330" stroke="#a855f7" stroke-width="3" fill="none" />
+  
+  <!-- Animated Elements (represented statically) -->
+  <circle cx="100" cy="440" r="6" fill="#a855f7" />
+  <circle cx="700" cy="330" r="6" fill="#a855f7" />
+  
+  <!-- Growth Indicator -->
+  <polygon points="750,100 770,80 790,100" fill="#22c55e" />
+</svg>
+
