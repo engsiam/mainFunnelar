@@ -32,7 +32,7 @@ export function Navbar() {
                 transition={{ duration: 0.5 }}
               >
                 <FallbackImage
-                  src="/logo.jpg"
+                  src="/logo.png"
                   alt="Funnelar"
                   width={180}
                   height={50}

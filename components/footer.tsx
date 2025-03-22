@@ -19,7 +19,7 @@ export function Footer() {
           >
             <Link href="/" className="inline-block mb-4">
               <FallbackImage
-                src="/funnelar-logo-white.svg"
+                src="/logo-v2.png"
                 alt="Funnelar"
                 width={180}
                 height={50}
