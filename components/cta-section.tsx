@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { WaveBackground } from "@/components/wave-background"
+import Link from "next/link"
 
 export function CtaSection() {
   return (
@@ -32,6 +33,7 @@ export function CtaSection() {
             >
               Get a Free Consultation
             </Button>
+            <Link href="/case-studies">
             <Button
               size="lg"
               variant="outline"
@@ -39,6 +41,7 @@ export function CtaSection() {
             >
               View Case Studies
             </Button>
+            </Link>
           </div>
 
           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
