@@ -30,16 +30,16 @@ export function Footer() {
               Delivering stunning brands, relatable products, & results oriented marketing strategy & execution
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.facebook.com/profile.php?id=61574046144163" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook size={20} />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              {/* <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter size={20} />
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram size={20} />
-              </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              </Link> */}
+              <Link href="https://www.linkedin.com/company/funnelar/?viewAsMember=true" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={20} />
               </Link>
             </div>
