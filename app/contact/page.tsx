@@ -3,6 +3,14 @@ import { Footer } from "@/components/footer"
 import { ContactHero } from "@/components/contact-hero"
 import { ContactForm } from "@/components/contact-form"
 import { PopupForm } from "@/components/popup-form"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact Funnelar | Get in Touch with Our Amazon Experts",
+  description:
+    "Have questions about Amazon marketing? Contact Funnelar today! Our team is ready to help with PPC, listing optimization, and account management solutions.",
+};
+
 
 export default function Contact() {
   return (

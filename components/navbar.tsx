@@ -43,14 +43,21 @@ export function Navbar() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <NavLinks />
-            <Button size="sm" className="bg-primary hover:bg-secondary text-white">
+            <Button size="sm" className="bg-primary hover:bg-secondary text-white"
+            onClick={() => {
+              const popupButton = document.querySelector(
+                ".fixed.bottom-4.right-4"
+              ) as HTMLButtonElement;
+              if (popupButton) popupButton.click();
+            }}
+            >
               Get Started
             </Button>
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>

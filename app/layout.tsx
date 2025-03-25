@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   title: "Funnelar - Amazon Marketing Experts",
   description:
     "Delivering stunning brands, relatable products, & results oriented marketing strategy & execution",
-  generator: "v0.dev",
 };
 
 export default function RootLayout({

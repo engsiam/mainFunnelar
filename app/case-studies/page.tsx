@@ -2,6 +2,14 @@ import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { CaseStudiesHero } from "@/components/case-studies-hero"
 import { CaseStudiesList } from "@/components/case-studies-list"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Funnelar Case Studies | Proven Amazon Growth Strategies",
+  description:
+    "See how Funnelar has helped businesses grow on Amazon. Our case studies showcase successful PPC campaigns, listing optimizations, and brand strategies.",
+};
+
 
 export default function CaseStudies() {
   return (
