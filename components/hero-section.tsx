@@ -16,14 +16,12 @@ export function HeroSection() {
           <ClientOnly
             fallback={
               <div className="max-w-xl">
-                <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                  100s of Millions
-                  <br />
-                  In Amazon Sales
+                <h1 className="text-5xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+                Scale Your Amazon Sales with Proven Strategies
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 mb-8">
-                  Delivering stunning brands, relatable products, & results
-                  oriented marketing strategy & execution
+                  We help brands dominate Amazon with expert FBA & FBM services,
+                  high-ROI PPC campaigns, and organic traffic growth strategies.
                 </p>
                 <div className="h-14 w-48 bg-primary rounded-full"></div>
               </div>
@@ -35,14 +33,12 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="max-w-xl"
             >
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                100s of Millions
-                <br />
-                In Amazon Sales
+              <h1 className="text-5xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
+              Scale Your Amazon Sales with Proven Strategies
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8">
-                Delivering stunning brands, relatable products, & results
-                oriented marketing strategy & execution
+                We help brands dominate Amazon with expert FBA & FBM services,
+                high-ROI PPC campaigns, and organic traffic growth strategies.
               </p>
               <Button
                 size="lg"
