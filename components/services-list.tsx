@@ -1,41 +1,52 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Search, BarChart, ShoppingCart, Camera, MessageSquare, TrendingUp } from "lucide-react"
+import { Search, BarChart, ShoppingCart, Camera, MessageSquare, TrendingUp, TriangleRight, Code } from "lucide-react"
 
 export function ServicesList() {
   const services = [
     {
-      icon: <Search className="h-10 w-10 text-primary" />,
+      icon: <Search className="h-12 w-12 text-primary mb-4" />,
       title: "Amazon SEO",
       description:
-        "Optimize your product listings to rank higher in Amazon's search results and drive more organic traffic.",
+        "Optimize your product listings to rank higher in Amazon’s search results, driving more organic traffic and increasing visibility",
+      link: "/our-services",
     },
     {
-      icon: <BarChart className="h-10 w-10 text-primary" />,
+      icon: <BarChart className="h-12 w-12 text-primary mb-4" />,
       title: "PPC Management",
-      description: "Strategic Amazon advertising campaigns that maximize visibility and ROI while minimizing ACoS.",
+      description:
+        "Design and optimize high-performance advertising campaigns that boost visibility, drive conversions, and minimize ACoS (Advertising Cost of Sales)",
+      link: "/ppc-management",
     },
     {
-      icon: <ShoppingCart className="h-10 w-10 text-primary" />,
+      icon: <ShoppingCart className="h-12 w-12 text-primary mb-4" />,
       title: "Listing Optimization",
       description:
-        "Compelling product titles, bullet points, descriptions, and backend keywords that convert browsers into buyers.",
+        "Craft compelling product titles, bullet points, descriptions, and backend keywords to improve listing quality and increase conversion rates  ",
+      link: "/our-services",
     },
     {
-      icon: <Camera className="h-10 w-10 text-primary" />,
-      title: "Product Photography",
-      description: "High-quality product images that showcase your products and help increase conversion rates.",
+      icon: <TrendingUp className="h-12 w-12 text-primary mb-4" />,
+      title: "Brand Growth",
+      description:
+        "Create high-quality, professional-grade images that showcase your products effectively, boosting engagement and conversion rates",
+      link: "/our-services",
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-primary" />,
       title: "Review Management",
-      description: "Strategies to generate positive reviews and effectively manage customer feedback.",
+      description: "Implement strategies to generate authentic positive reviews and manage customer feedback, enhancing your product credibility and sales potential.",
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
       title: "Brand Growth",
-      description: "Comprehensive brand building strategies to establish and grow your presence on Amazon.",
+      description: "Develop comprehensive brand-building strategies to strengthen your presence on Amazon, build trust, and grow long-term customer loyalty.",
+    },
+    {
+      icon: <Code className="h-10 w-10 text-primary" />,
+      title: "Shopify Theme Development",
+      description: "Design and develop custom Shopify themes tailored to your brand identity, ensuring a seamless user experience and maximizing conversions.",
     },
   ]
 

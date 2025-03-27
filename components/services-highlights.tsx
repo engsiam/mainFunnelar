@@ -1,37 +1,41 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Search, BarChart, ShoppingCart, TrendingUp } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { BarChart, Search, ShoppingCart, TrendingUp } from "lucide-react";
+import Link from "next/link";
 
 export function ServicesHighlights() {
   const services = [
     {
       icon: <Search className="h-12 w-12 text-primary mb-4" />,
       title: "Amazon SEO",
-      description: "Optimize your listings to rank higher in Amazon's search results and drive more organic traffic.",
+      description:
+        "Optimize your product listings to rank higher in Amazon’s search results, driving more organic traffic and increasing visibility",
       link: "/our-services",
     },
     {
       icon: <BarChart className="h-12 w-12 text-primary mb-4" />,
       title: "PPC Management",
-      description: "Strategic advertising campaigns that maximize visibility and ROI while minimizing ACoS.",
+      description:
+        "Design and optimize high-performance advertising campaigns that boost visibility, drive conversions, and minimize ACoS (Advertising Cost of Sales)",
       link: "/ppc-management",
     },
     {
       icon: <ShoppingCart className="h-12 w-12 text-primary mb-4" />,
       title: "Listing Optimization",
-      description: "Compelling product listings that convert browsers into buyers with strategic content and keywords.",
+      description:
+        "Craft compelling product titles, bullet points, descriptions, and backend keywords to improve listing quality and increase conversion rates  ",
       link: "/our-services",
     },
     {
       icon: <TrendingUp className="h-12 w-12 text-primary mb-4" />,
       title: "Brand Growth",
-      description: "Comprehensive strategies to establish and grow your presence on Amazon's marketplace.",
+      description:
+        "Create high-quality, professional-grade images that showcase your products effectively, boosting engagement and conversion rates",
       link: "/our-services",
     },
-  ]
+  ];
 
   return (
     <section className="py-20 bg-white">
@@ -43,9 +47,12 @@ export function ServicesHighlights() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Amazon Marketing Services</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Boost Amazon Sales with Expert Marketing
+          </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            We provide comprehensive solutions to help your business thrive on Amazon's marketplace
+            Drive sales & visibility on Amazon w/ SEO, PPC, listing optimization
+            & brand growth. Maximize ROI today!
           </p>
         </motion.div>
 
@@ -72,6 +79,5 @@ export function ServicesHighlights() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

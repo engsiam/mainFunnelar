@@ -61,7 +61,7 @@ export function VisibilitySection() {
             <motion.div variants={itemVariants} className="order-2 md:order-1">
               <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
                 <FallbackImage
-                  src="/placeholder.svg"
+                  src="/Visibility-is-Key-to-Amazon-Success.webp"
                   alt="Amazon Product Listing"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

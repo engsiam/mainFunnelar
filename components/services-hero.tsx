@@ -15,9 +15,10 @@ export function ServicesHero() {
           transition={{ duration: 0.8 }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Amazon Marketing Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Boost Amazon Sales with Expert Marketing</h1>
           <p className="text-lg md:text-xl text-gray-700">
-            Comprehensive solutions to grow your Amazon business and maximize your ROI
+          Drive sales & visibility on Amazon w/ SEO, PPC, listing optimization
+          & brand growth. Maximize ROI today!
           </p>
         </motion.div>
       </div>

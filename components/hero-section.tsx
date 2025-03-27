@@ -70,7 +70,7 @@ export function HeroSection() {
             >
               <div className="relative w-full h-[400px] rounded-lg overflow-hidden shadow-2xl">
                 <FallbackImage
-                  src="/placeholder.svg"
+                  src="/scale-your-imazon-sales.webp"
                   alt="Amazon Marketing Dashboard"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
