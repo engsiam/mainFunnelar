@@ -27,11 +27,9 @@ export function ServicesList() {
       link: "/our-services",
     },
     {
-      icon: <TrendingUp className="h-12 w-12 text-primary mb-4" />,
-      title: "Brand Growth",
-      description:
-        "Create high-quality, professional-grade images that showcase your products effectively, boosting engagement and conversion rates",
-      link: "/our-services",
+      icon: <Code className="h-10 w-10 text-primary" />,
+      title: "Shopify Theme Development",
+      description: "Design and develop custom Shopify themes tailored to your brand identity, ensuring a seamless user experience and maximizing conversions.",
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-primary" />,
@@ -43,11 +41,7 @@ export function ServicesList() {
       title: "Brand Growth",
       description: "Develop comprehensive brand-building strategies to strengthen your presence on Amazon, build trust, and grow long-term customer loyalty.",
     },
-    {
-      icon: <Code className="h-10 w-10 text-primary" />,
-      title: "Shopify Theme Development",
-      description: "Design and develop custom Shopify themes tailored to your brand identity, ensuring a seamless user experience and maximizing conversions.",
-    },
+    
   ]
 
   const containerVariants = {
