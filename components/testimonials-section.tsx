@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { useState } from "react"
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { FallbackImage } from "@/components/fallback-image"
-import { ClientWrapper } from "@/components/client-wrapper"
+import { ClientWrapper } from "@/components/client-wrapper";
+import { FallbackImage } from "@/components/fallback-image";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
+import { useEffect, useState } from "react";
 
 export function TestimonialsSection() {
   const testimonials = [
@@ -30,17 +30,25 @@ export function TestimonialsSection() {
       position: "CEO, Glow Essentials",
       image: "/testimonial-3.svg",
     },
-  ]
+  ];
 
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
-  }
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
-  }
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
+    );
+  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial();
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section className="py-20 bg-white">
@@ -52,9 +60,12 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            What Our Clients Say
+          </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about working with Funnelar.
+            Don't just take our word for it. Here's what our clients have to say
+            about working with Funnelar.
           </p>
         </motion.div>
 
@@ -95,17 +106,28 @@ export function TestimonialsSection() {
                 </div>
                 <div className="flex-1">
                   <Quote className="h-10 w-10 text-primary/30 mb-4" />
-                  <p className="text-lg md:text-xl text-gray-700 italic mb-6">"{testimonials[currentIndex].quote}"</p>
+                  <p className="text-lg md:text-xl text-gray-700 italic mb-6">
+                    "{testimonials[currentIndex].quote}"
+                  </p>
                   <div>
-                    <p className="font-semibold text-gray-900">{testimonials[currentIndex].author}</p>
-                    <p className="text-gray-600">{testimonials[currentIndex].position}</p>
+                    <p className="font-semibold text-gray-900">
+                      {testimonials[currentIndex].author}
+                    </p>
+                    <p className="text-gray-600">
+                      {testimonials[currentIndex].position}
+                    </p>
                   </div>
                 </div>
               </div>
             </motion.div>
 
             <div className="flex justify-center mt-8 gap-4">
-              <Button variant="outline" size="icon" onClick={prevTestimonial} className="rounded-full">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={prevTestimonial}
+                className="rounded-full"
+              >
                 <ChevronLeft className="h-5 w-5" />
               </Button>
               {testimonials.map((_, index) => (
@@ -119,7 +141,12 @@ export function TestimonialsSection() {
                   <span className="sr-only">Testimonial {index + 1}</span>
                 </Button>
               ))}
-              <Button variant="outline" size="icon" onClick={nextTestimonial} className="rounded-full">
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={nextTestimonial}
+                className="rounded-full"
+              >
                 <ChevronRight className="h-5 w-5" />
               </Button>
             </div>
@@ -127,6 +154,5 @@ export function TestimonialsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

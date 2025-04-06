@@ -5,12 +5,12 @@ import { CheckCircle } from "lucide-react"
 
 export function BenefitsSection() {
   const benefits = [
-    "Increased visibility in Amazon search results",
-    "Higher conversion rates with optimized listings",
-    "Reduced advertising costs with strategic PPC",
-    "Improved brand recognition and customer loyalty",
-    "Data-driven strategies based on market analysis",
-    "Ongoing optimization to adapt to market changes",
+    "Boost your product rankings and appear where customers are actively searching.",
+    "Craft compelling listings that convert browsers into buyers, driving more sales.",
+    "Minimize ACoS (Advertising Cost of Sales) while maximizing ROI on your campaigns.",
+    "Build trust and long-term relationships with your audience through targeted strategies.",
+    "Stay ahead of trends with insights derived from comprehensive data analytics.",
+    "Adapt seamlessly to evolving marketplace dynamics with continuous improvement.",
   ]
 
   return (
@@ -23,11 +23,9 @@ export function BenefitsSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Amazon Growth Lab?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Funnelar.io for Amazon Success?</h2>
             <p className="text-lg text-gray-700 mb-8">
-              We combine industry expertise with data-driven strategies to deliver exceptional results for our clients.
-              Our team of Amazon specialists stays ahead of marketplace trends to ensure your business maintains a
-              competitive edge.
+            Our team of Amazon specialists stays ahead of marketplace trends to ensure your business maintains a competitive edge. <strong>From Amazon SEO</strong> and <strong>PPC management</strong> to organic traffic growth and <strong>Shopify theme development</strong>,we provide tailored solutions to help you succeed.
             </p>
 
             <ul className="space-y-4">
