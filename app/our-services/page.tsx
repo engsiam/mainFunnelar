@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { ServicesHero } from "@/components/services-hero"
 import { ServicesList } from "@/components/services-list"
 import { Metadata } from "next";
+import { PopupForm } from "@/components/popup-form";
 
 export const metadata: Metadata = {
   title: "Funnelar - Our Services",
@@ -17,6 +18,7 @@ export default function OurServices() {
       <ServicesHero />
       <ServicesList />
       <Footer />
+      <PopupForm />
     </main>
   )
 }

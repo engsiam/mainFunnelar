@@ -20,7 +20,7 @@ export function PPCHero() {
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Amazon PPC Management</h1>
             <p className="text-lg md:text-xl text-gray-700 mb-8">
-              Strategic advertising campaigns that maximize visibility and ROI while minimizing ACoS
+            Unlock the power of Amazon advertising with our expert PPC management services. We design and optimize high-performance campaigns that maximize visibility, drive conversions, and minimize ACoS (Advertising Cost of Sales), ensuring you achieve the best possible ROI
             </p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white rounded-full px-8 py-6 text-lg">
               Get Started Today

@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { PPCHero } from "@/components/ppc-hero"
 import { PPCFeatures } from "@/components/ppc-features"
 import { Metadata } from "next";
+import { PopupForm } from "@/components/popup-form";
 
 export const metadata: Metadata = {
   title: "Amazon PPC Management | Maximize Your Advertising ROI with Funnelar",
@@ -19,6 +20,7 @@ export default function PPCManagement() {
       <PPCHero />
       <PPCFeatures />
       <Footer />
+      <PopupForm />
     </main>
   )
 }

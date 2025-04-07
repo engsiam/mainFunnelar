@@ -46,16 +46,22 @@ export function useConsultationForm(): UseConsultationFormReturn {
     setIsError(false)
 
     try {
-      // In a real application, you would send the form data to your API
-      // For this example, we'll simulate a successful submission
-      await new Promise((resolve) => setTimeout(resolve, 1000))
-
-      setIsSuccess(true)
-      resetForm()
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+      if (!response.ok) {
+        throw new Error("Network response was not ok")
+      }
+      setIsSuccess(true);
+      resetForm();
     } catch (error) {
+      console.error("Error submitting form:", error)
       setIsError(true)
-    } finally {
-      setIsSubmitting(false)
+      
     }
   }
 

@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { CaseStudiesHero } from "@/components/case-studies-hero"
 import { CaseStudiesList } from "@/components/case-studies-list"
 import { Metadata } from "next";
+import { PopupForm } from "@/components/popup-form";
 
 export const metadata: Metadata = {
   title: "Funnelar Case Studies | Proven Amazon Growth Strategies",
@@ -18,6 +19,7 @@ export default function CaseStudies() {
       <CaseStudiesHero />
       <CaseStudiesList />
       <Footer />
+      <PopupForm />
     </main>
   )
 }

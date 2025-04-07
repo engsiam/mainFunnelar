@@ -16,7 +16,7 @@ export function AboutHero() {
           className="max-w-3xl mx-auto text-center"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Funnelar</h1>
-          <p className="text-lg md:text-xl text-gray-700">Empowering businesses to thrive in the Amazon marketplace</p>
+          <p className="text-lg md:text-xl text-gray-700">Empowering Businesses to Thrive in the Amazon Marketplace</p>
         </motion.div>
       </div>
     </section>

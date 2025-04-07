@@ -16,19 +16,13 @@ export function AboutContent() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
             <p className="text-lg text-gray-700 mb-6">
-              Funnelar was founded in 2020 with a mission to help businesses navigate the complex world of Amazon
-              selling. Our team of experts combines years of experience in e-commerce, digital marketing, and Amazon's
-              ecosystem to deliver results-driven strategies for our clients.
+            Funnelar was founded in 2020 with a mission to help businesses navigate the complex world of Amazon selling. Our team of experts combines years of experience in e-commerce, digital marketing, and Amazon's ecosystem to deliver results-driven strategies for our clients.
             </p>
             <p className="text-lg text-gray-700 mb-6">
-              We believe in a data-driven approach, constantly analyzing market trends and leveraging cutting-edge
-              technologies to stay ahead of the curve. Our success is measured by the growth and success of our clients,
-              and we're proud to have helped hundreds of businesses achieve their goals on Amazon.
+            We believe in a data-driven approach, constantly analyzing market trends and leveraging cutting-edge technologies to stay ahead of the curve. Our success is measured by the growth and success of our clients, and we're proud to have helped hundreds of businesses achieve their goals on Amazon.
             </p>
             <p className="text-lg text-gray-700">
-              At Funnelar, we're not just consultants – we're partners in your success. We're committed to transparency,
-              innovation, and delivering measurable results that drive your business forward in the competitive Amazon
-              marketplace.
+            At Funnelar, we’re not just consultants—we’re partners in your success. We’re committed to transparency, innovation, and delivering measurable results that drive your business forward in the competitive Amazon marketplace.
             </p>
           </div>
           <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
