@@ -19,7 +19,7 @@ export default async function handler(req, res) {
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "shohrab.hossain36@gmail.com",
+      to: "followfarhad@gmail.com",
       subject: "New Contact Form Submission",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; padding: 20px; background: #ffffff; border-radius: 8px;border: 2px solid #FC9F59">
