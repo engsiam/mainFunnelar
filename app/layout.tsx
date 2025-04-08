@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import dynamic from "next/dynamic";
@@ -34,6 +35,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
           <TimedPopup />
         </ThemeProvider>
       </body>
