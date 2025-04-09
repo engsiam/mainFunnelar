@@ -18,7 +18,7 @@ export default async function handler(req, res) {
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"funnelar.io" <${process.env.EMAIL_USER}>`,
       to: "followfarhad@gmail.com",
       subject: "New Contact Form Submission",
       html: `
@@ -36,7 +36,7 @@ export default async function handler(req, res) {
 
     // Confirmation Email to User
     const userMailOptions = {
-      from: process.env.EMAIL_USER,
+      from: `"funnelar.io" <${process.env.EMAIL_USER}>`,
       to: email, // Send to the user's email
       subject: "Thank You for Your Submission!",
       html: `
