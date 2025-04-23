@@ -12,28 +12,28 @@ export function ServicesHighlights() {
       title: "Amazon SEO",
       description:
         "Optimize your product listings to rank higher in Amazon’s search results, driving more organic traffic and increasing visibility",
-      link: "/our-services",
+      link: "/our-services/amazon-seo",
     },
     {
       icon: <BarChart className="h-12 w-12 text-primary mb-4" />,
       title: "PPC Management",
       description:
         "Design and optimize high-performance advertising campaigns that boost visibility, drive conversions, and minimize ACoS (Advertising Cost of Sales)",
-      link: "/ppc-management",
+      link: "/our-services/ppc-managementt",
     },
     {
       icon: <ShoppingCart className="h-12 w-12 text-primary mb-4" />,
       title: "Listing Optimization",
       description:
         "Craft compelling product titles, bullet points, descriptions, and backend keywords to improve listing quality and increase conversion rates  ",
-      link: "/our-services",
+      link: "/our-services/listing-optimization",
     },
     {
       icon: <TrendingUp className="h-12 w-12 text-primary mb-4" />,
       title: "Brand Growth",
       description:
         "Create high-quality, professional-grade images that showcase your products effectively, boosting engagement and conversion rates",
-      link: "/our-services",
+      link: "/our-services/brand-growth",
     },
   ];
 

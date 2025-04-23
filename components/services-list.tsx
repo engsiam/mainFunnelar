@@ -1,45 +1,55 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Search, BarChart, ShoppingCart, Camera, MessageSquare, TrendingUp, TriangleRight, Code } from "lucide-react"
+import { Search, BarChart, ShoppingCart, Camera, MessageSquare, TrendingUp, Facebook } from "lucide-react"
+import Link from "next/link"
 
 export function ServicesList() {
   const services = [
     {
-      icon: <Search className="h-12 w-12 text-primary mb-4" />,
+      icon: <Search className="h-10 w-10 text-primary" />,
       title: "Amazon SEO",
       description:
-        "Optimize your product listings to rank higher in Amazon’s search results, driving more organic traffic and increasing visibility",
-      link: "/our-services",
+        "Optimize your product listings to rank higher in Amazon's search results and drive more organic traffic.",
+      slug: "amazon-seo",
     },
     {
-      icon: <BarChart className="h-12 w-12 text-primary mb-4" />,
+      icon: <BarChart className="h-10 w-10 text-primary" />,
       title: "PPC Management",
-      description:
-        "Design and optimize high-performance advertising campaigns that boost visibility, drive conversions, and minimize ACoS (Advertising Cost of Sales)",
-      link: "/ppc-management",
+      description: "Strategic Amazon advertising campaigns that maximize visibility and ROI while minimizing ACoS.",
+      slug: "ppc-management",
     },
     {
-      icon: <ShoppingCart className="h-12 w-12 text-primary mb-4" />,
+      icon: <ShoppingCart className="h-10 w-10 text-primary" />,
       title: "Listing Optimization",
       description:
-        "Craft compelling product titles, bullet points, descriptions, and backend keywords to improve listing quality and increase conversion rates  ",
-      link: "/our-services",
+        "Compelling product titles, bullet points, descriptions, and backend keywords that convert browsers into buyers.",
+      slug: "listing-optimization",
     },
     {
-      icon: <Code className="h-10 w-10 text-primary" />,
-      title: "Shopify Theme Development",
-      description: "Design and develop custom Shopify themes tailored to your brand identity, ensuring a seamless user experience and maximizing conversions.",
+      icon: <Camera className="h-10 w-10 text-primary" />,
+      title: "Product Photography",
+      description: "High-quality product images that showcase your products and help increase conversion rates.",
+      slug: "product-photography",
     },
     {
       icon: <MessageSquare className="h-10 w-10 text-primary" />,
       title: "Review Management",
-      description: "Implement strategies to generate authentic positive reviews and manage customer feedback, enhancing your product credibility and sales potential.",
+      description: "Strategies to generate positive reviews and effectively manage customer feedback.",
+      slug: "review-management",
     },
     {
       icon: <TrendingUp className="h-10 w-10 text-primary" />,
       title: "Brand Growth",
-      description: "Develop comprehensive brand-building strategies to strengthen your presence on Amazon, build trust, and grow long-term customer loyalty.",
+      description: "Comprehensive brand building strategies to establish and grow your presence on Amazon.",
+      slug: "brand-growth",
+    }
+    ,
+    {
+      icon: <Facebook className="h-10 w-10 text-primary" />,
+      title: "Facebook Ads",
+      description: "Strategic Facebook advertising campaigns that drive external traffic to your Amazon listings.",
+      slug: "facebook-ads",
     },
     
   ]
@@ -79,9 +89,11 @@ export function ServicesList() {
               variants={itemVariants}
               className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow"
             >
-              <div className="mb-4">{service.icon}</div>
-              <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+              <Link href={`/our-services/${service.slug}`} className="block h-full">
+                <div className="mb-4">{service.icon}</div>
+                <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                <p className="text-gray-600">{service.description}</p>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
