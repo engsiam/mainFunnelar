@@ -1,10 +1,10 @@
 "use client";
 
-
 import { FallbackImage } from "@/components/fallback-image";
 import { Button } from "@/components/ui/button";
 import { WaveBackground } from "@/components/wave-background";
 import { motion } from "framer-motion";
+import parse from 'html-react-parser';
 import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -808,11 +808,16 @@ export function ServiceDetail({ slug }: { slug: string }) {
       },
       "facebook-ads": {
         id: "facebook-ads",
-        title: "Facebook Ads",
-        description:
-          "Strategic Facebook advertising campaigns that drive external traffic to your Amazon listings.",
-        longDescription:
-          "Our Facebook Ads service helps Amazon sellers leverage the power of Facebook's advertising platform to drive qualified external traffic to their Amazon listings. By targeting specific demographics, interests, and behaviors, we create campaigns that reach potential customers outside of Amazon's ecosystem. This external traffic strategy not only increases sales but also improves your organic ranking on Amazon through enhanced sales velocity and diversified traffic sources.",
+        title: "Buy Facebook Business Manager & Ads Accounts",
+        description: "Start Advertising Instantly",
+        longDescription:  `<p>Tired of getting ad accounts banned or waiting days for verification?<br/>
+        We offer Verified Facebook Business Managers and Reinstate-Ready Profiles that are fully set up, warmed up, and ready to run ads instantly.<br/>
+        No more headaches. Just launch and grow.</p>
+      
+        <h2 class="text-lg font-semibold my-4">Why Thousands Trust Us - Even with So Many Options Out There</h2>
+        <p>We get it. There are hundreds of providers out there offering Facebook Ad Accounts and Business Managers.<br/>
+        But we’re not just another seller. Here’s what makes us different, and why our clients stay with us long-term:</p>
+      `,
         features: [
           "Custom audience creation and targeting",
           "Ad creative development and testing",
@@ -836,29 +841,39 @@ export function ServiceDetail({ slug }: { slug: string }) {
         ],
         process: [
           {
-            title: "Audience Research",
+            title: "Real People & Real Support",
             description:
-              "We identify your ideal customer demographics, interests, and behaviors to create targeted audience segments.",
+              "You're not just buying an account, you're partnering with a team that cares about your success.",
           },
           {
-            title: "Campaign Strategy",
+            title: "Fast, Hassle-Free Setup",
             description:
-              "We develop a comprehensive Facebook advertising strategy aligned with your Amazon business goals.",
+              "While others take hours or days, we deliver access within minutes. No stress, no waiting, no excuses",
           },
           {
-            title: "Creative Development",
+            title: "Built for Stability",
             description:
-              "Our team creates compelling ad copy, images, and videos designed to engage your target audience.",
+              "Not Just Hype - Our accounts are verified, aged, and warmed up. We don’t cut corners or use shady methods, so your campaigns are safe from unexpected ban.",
           },
           {
-            title: "Campaign Setup",
+            title: "Instant Free Replacements",
             description:
-              "We build optimized campaign structures with proper tracking and attribution to measure performance.",
+              "If something ever goes wrong, you’re not left hanging. We replace your account instantly — no questions, no delays.",
           },
           {
-            title: "Ongoing Optimization",
+            title: "Transparent, Flexible Pricing",
             description:
-              "We continuously monitor and refine your campaigns to improve performance and ROI over time.",
+              "No hidden fees. No lock-in contracts. Pay only for what you need, when you need it. Pause or cancel anytime.",
+          },
+          {
+            title: "Designed for Results",
+            description:
+              "Whether you’re scaling a 6-figure funnel or just launching your first campaign, we make sure your ad accounts are ready to perform.",
+          },
+          {
+            title: "Talk to a Human Anytime",
+            description:
+              "Stuck? Have a question? Our live chat team is here for you 24/7 on WhatsApp, Telegram, or Email. No bots. Just real humans who want to help you win..",
           },
         ],
         packages: [
@@ -1044,15 +1059,11 @@ export function ServiceDetail({ slug }: { slug: string }) {
                     Overview
                   </h2>
                   <p className="text-lg text-gray-700 mb-8">
-                    {service.longDescription}
+                    {parse(service.longDescription)}
                   </p>
 
                   {/* AI-Generated Images Section */}
-                  {service.aiImagePrompt && (
-                    <div className="mb-12">
-                      
-                    </div>
-                  )}
+                  {service.aiImagePrompt && <div className="mb-12"></div>}
 
                   {/* Features */}
                   <div className="mb-12">
