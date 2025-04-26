@@ -712,7 +712,7 @@ Buy a Reinstated Facebook Ads Account that was previously restricted but has now
             ],
           },
           {
-            category: "Verified Business Managers Verified Business Managers",
+            category: "Verified Business Managers",
             questions: [
               {
                 question:
