@@ -4,7 +4,7 @@ import { FallbackImage } from "@/components/fallback-image";
 import { Button } from "@/components/ui/button";
 import { WaveBackground } from "@/components/wave-background";
 import { motion } from "framer-motion";
-import parse from 'html-react-parser';
+import parse from "html-react-parser";
 import { ArrowLeft, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -810,7 +810,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
         id: "facebook-ads",
         title: "Buy Facebook Business Manager & Ads Accounts",
         description: "Start Advertising Instantly",
-        longDescription:  `<p>Tired of getting ad accounts banned or waiting days for verification?<br/>
+        longDescription: `<p>Tired of getting ad accounts banned or waiting days for verification?<br/>
         We offer Verified Facebook Business Managers and Reinstate-Ready Profiles that are fully set up, warmed up, and ready to run ads instantly.<br/>
         No more headaches. Just launch and grow.</p>
       
@@ -830,14 +830,18 @@ export function ServiceDetail({ slug }: { slug: string }) {
           "Landing page optimization",
         ],
         benefits: [
-          "Increased sales velocity from external traffic",
-          "Improved organic ranking on Amazon",
-          "Reduced dependency on Amazon PPC",
-          "Brand awareness outside of Amazon",
-          "Customer data collection for retargeting",
-          "Lower customer acquisition costs",
-          "Competitive advantage through diversified traffic",
-          "Enhanced product launch success",
+          "Instant Access",
+          "Aged & Trusted Accounts",
+          "Verified & Policy-Compliant",
+          "High Spending Limits",
+          "Real US/EU/Asian Profiles",
+          "Lower Risk of Ad Restrictions",
+          "Replacement Warranty",
+          "Full Admin Access",
+          "24/7 Customer Support",
+          "Ideal for All Industries",
+          "Multiple Package Options",
+          "Affordable Pricing",
         ],
         process: [
           {
@@ -936,23 +940,46 @@ export function ServiceDetail({ slug }: { slug: string }) {
         ],
         faqs: [
           {
-            question: "How does Facebook advertising help my Amazon business?",
-            answer:
-              "Facebook advertising drives external traffic to your Amazon listings, which can improve your organic ranking through increased sales velocity. Amazon's algorithm favors products that receive traffic and sales from diverse sources. Additionally, Facebook ads allow you to build brand awareness outside of Amazon and collect customer data for retargeting purposes.",
+            question:
+              "Why should I buy Facebook Ads Accounts from your service instead of creating my own?",
+            answer: `
+              <p>Facebook rejects over 70% of new ad accounts due to strict automated policy checks. When you buy from us, you skip the trial-and-error phase and get:</p>
+              <div className="my-4">
+                ✅ Pre-approved, aged ad accounts (6+ months) ready to run ads<br/>
+                ✅ Higher daily spend limits ($1,500+ per day) right out of the gate<br/>
+                ✅ No "Ad Account Restricted" issues — clean history and high trust
+              </div>
+              <p>Stop wasting time on appeals. With our accounts, you can launch ads within minutes and focus on scaling your business.</p>
+            `,
           },
           {
             question:
-              "How do you track the performance of Facebook ads for Amazon listings?",
-            answer:
-              "We use a combination of tracking methods including Amazon Attribution links, landing pages with tracking pixels, and unique promotion codes. This multi-faceted approach allows us to measure click-through rates, conversion rates, and return on ad spend (ROAS) for your Facebook campaigns.",
+              "Are your accounts safe and compliant with Facebook’s rules?",
+            answer: `
+              <p>Yes, all our accounts are fully compliant with Facebook's Terms of Service. We take every step to ensure safety and stability:</p>
+              <div className="my-4">
+                🔒 Whitelisted residential IPs to mimic real user behavior<br/>
+                🔒 Gradual ad spend scaling to avoid triggering Facebook’s risk systems<br/>
+                🔒 Aged Facebook profiles with organic activity history
+              </div>
+              <p>We also offer a 24-hour replacement guarantee if there’s any issue after delivery — your success is our priority.</p>
+            `,
           },
           {
             question:
-              "Is there a minimum ad spend required for your Facebook Ads service?",
-            answer:
-              "While there's no strict minimum, we recommend a monthly ad spend of at least $1,500 to generate meaningful results. The effectiveness of Facebook advertising scales with budget, allowing for more testing and optimization as spend increases.",
+              "My ad account got restricted. How does buying yours help?",
+            answer: `
+              <p>Once your account is flagged, it’s tough to recover — Facebook’s AI rarely lifts bans, even on appeal. Buying from us gives you:</p>
+              <div className="my-4">
+                🚫 A fresh ad environment with no past restrictions<br/>
+                ✅ Pre-approved, trusted BM and ad accounts<br/>
+                ✅ Instant campaign launch in less than 5 minutes
+              </div>
+              <p>No more delays or failed appeals — get back to running profitable campaigns right away.</p>
+            `,
           },
         ],
+
         image: "/facebook-ads-service.svg",
         icon: "Facebook",
         aiImagePrompt:
@@ -1066,7 +1093,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
                   {service.aiImagePrompt && <div className="mb-12"></div>}
 
                   {/* Features */}
-                  <div className="mb-12">
+                  {/* <div className="mb-12">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">
                       What's Included
                     </h2>
@@ -1078,7 +1105,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </div> */}
 
                   {/* Benefits */}
                   <div className="mb-12">
@@ -1098,7 +1125,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
                   {/* Process */}
                   <div className="mb-12">
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">
-                      Our Process
+                      What's Included
                     </h2>
                     <div className="space-y-8">
                       {service.process.map((step, index) => (
@@ -1120,49 +1147,165 @@ export function ServiceDetail({ slug }: { slug: string }) {
                     <h2 className="text-2xl font-bold text-gray-900 mb-6">
                       Pricing Packages
                     </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                      {service.packages.map((pkg, index) => (
-                        <div
-                          key={index}
-                          className={`border rounded-lg overflow-hidden ${
-                            pkg.isPopular
-                              ? "border-primary shadow-lg"
-                              : "border-gray-200"
-                          }`}
-                        >
-                          {pkg.isPopular && (
-                            <div className="bg-primary text-white text-center py-1 text-sm font-medium">
-                              Most Popular
-                            </div>
-                          )}
-                          <div className="p-6">
-                            <h3 className="text-xl font-bold mb-2">
-                              {pkg.name}
-                            </h3>
-                            <div className="text-3xl font-bold text-primary mb-2">
-                              {pkg.price}
-                            </div>
-                            <p className="text-gray-600 mb-4">
-                              {pkg.description}
-                            </p>
-                            <div className="border-t border-gray-200 pt-4 mt-4">
-                              <ul className="space-y-3">
-                                {pkg.features.map((feature, idx) => (
-                                  <li key={idx} className="flex items-start">
-                                    <CheckCircle className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-0.5" />
-                                    <span className="text-sm text-gray-700">
-                                      {feature}
-                                    </span>
-                                  </li>
-                                ))}
-                              </ul>
-                            </div>
+
+                    {service.id === "facebook-ads" ? (
+                      <div className="overflow-x-auto">
+                        <div className="bg-gray-900 text-white p-4 rounded-t-lg">
+                          <h3 className="text-xl font-bold flex items-center">
+                            <span className="text-primary mr-2">•</span>{" "}
+                            Business Manager & Ad Account Packages
+                          </h3>
+                        </div>
+                        <table className="w-full border-collapse">
+                          <thead className="bg-gray-800 text-white">
+                            <tr>
+                              <th className="p-3 text-left">
+                                Package Description
+                              </th>
+                              <th className="p-3 text-left">
+                                Daily Spend Limit
+                              </th>
+                              <th className="p-3 text-left">Account Age</th>
+                              <th className="p-3 text-left">Price</th>
+                            </tr>
+                          </thead>
+                          <tbody className="bg-white">
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New Verified BM + 1 Ad Account
+                              </td>
+                              <td className="p-3">$25</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $45
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New Verified BM + 1 Ad Account
+                              </td>
+                              <td className="p-3">$50</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $60
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50 bg-primary/5">
+                              <td className="p-3 font-medium">
+                                Aged Verified BM (3–36 months) + 1 Ad Account
+                              </td>
+                              <td className="p-3">$50</td>
+                              <td className="p-3">3–36 months</td>
+                              <td className="p-3 font-bold text-primary">
+                                $80
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New Verified BM + 1 Ad Account
+                              </td>
+                              <td className="p-3">$250</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $110
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                Aged Verified BM (3–36 months) + 1 Ad Account
+                              </td>
+                              <td className="p-3">$250</td>
+                              <td className="p-3">3–36 months</td>
+                              <td className="p-3 font-bold text-primary">
+                                $120
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New Verified BM + 5 Ad Accounts
+                              </td>
+                              <td className="p-3">$250</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $150
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                Aged Verified BM (3–36 months) + 5 Ad Accounts
+                              </td>
+                              <td className="p-3">$250</td>
+                              <td className="p-3">3–36 months</td>
+                              <td className="p-3 font-bold text-primary">
+                                $160
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New Verified BM + 1 Ad Account
+                              </td>
+                              <td className="p-3">Unlimited</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $120
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                Aged Verified BM (3–36 months) + 1 Ad Account
+                              </td>
+                              <td className="p-3">Unlimited</td>
+                              <td className="p-3">3–36 months</td>
+                              <td className="p-3 font-bold text-primary">
+                                $130
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New BM + 1 Ad Account + Reinstate Profile (US/EU
+                                IP)
+                              </td>
+                              <td className="p-3">Unlimited</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $175
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                New BM + 1 Ad Account + Non-Reinstate Profile
+                                (US/EU IP)
+                              </td>
+                              <td className="p-3">Unlimited</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $165
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">New BM + 5 Ad Accounts</td>
+                              <td className="p-3">Unlimited</td>
+                              <td className="p-3">Fresh</td>
+                              <td className="p-3 font-bold text-primary">
+                                $180
+                              </td>
+                            </tr>
+                            <tr className="border-b border-gray-200 hover:bg-gray-50">
+                              <td className="p-3">
+                                Aged BM (3–36 months) + 5 Ad Accounts
+                              </td>
+                              <td className="p-3">Unlimited</td>
+                              <td className="p-3">3–36 months</td>
+                              <td className="p-3 font-bold text-primary">
+                                $199
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div>
                             <Button
-                              className={`w-full mt-6 ${
-                                pkg.isPopular
-                                  ? ""
-                                  : "bg-gray-800 hover:bg-gray-700"
-                              }`}
+                              className="w-full"
                               onClick={() => {
                                 const popupButton = document.querySelector(
                                   ".fixed.bottom-4.right-4"
@@ -1173,8 +1316,174 @@ export function ServiceDetail({ slug }: { slug: string }) {
                               Get Started
                             </Button>
                           </div>
+                          <div>
+                            <Button
+                              variant="outline"
+                              className="w-full"
+                              onClick={() => {
+                                const popupButton = document.querySelector(
+                                  ".fixed.bottom-4.right-4"
+                                ) as HTMLButtonElement;
+                                if (popupButton) popupButton.click();
+                              }}
+                            >
+                              Request Custom Package
+                            </Button>
+                          </div>
                         </div>
-                      ))}
+                      </div>
+                    ) : (
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {service.packages.map((pkg, index) => (
+                          <div
+                            key={index}
+                            className={`border rounded-lg overflow-hidden ${
+                              pkg.isPopular
+                                ? "border-primary shadow-lg"
+                                : "border-gray-200"
+                            }`}
+                          >
+                            {pkg.isPopular && (
+                              <div className="bg-primary text-white text-center py-1 text-sm font-medium">
+                                Most Popular
+                              </div>
+                            )}
+                            <div className="p-6">
+                              <h3 className="text-xl font-bold mb-2">
+                                {pkg.name}
+                              </h3>
+                              <div className="text-3xl font-bold text-primary mb-2">
+                                {pkg.price}
+                              </div>
+                              <p className="text-gray-600 mb-4">
+                                {pkg.description}
+                              </p>
+                              <div className="border-t border-gray-200 pt-4 mt-4">
+                                <ul className="space-y-3">
+                                  {pkg.features.map((feature, idx) => (
+                                    <li key={idx} className="flex items-start">
+                                      <CheckCircle className="h-5 w-5 text-primary mr-2 flex-shrink-0 mt-0.5" />
+                                      <span className="text-sm text-gray-700">
+                                        {feature}
+                                      </span>
+                                    </li>
+                                  ))}
+                                </ul>
+                              </div>
+                              <Button
+                                className={`w-full mt-6 ${
+                                  pkg.isPopular
+                                    ? ""
+                                    : "bg-gray-800 hover:bg-gray-700"
+                                }`}
+                                onClick={() => {
+                                  const popupButton = document.querySelector(
+                                    ".fixed.bottom-4.right-4"
+                                  ) as HTMLButtonElement;
+                                  if (popupButton) popupButton.click();
+                                }}
+                              >
+                                Get Started
+                              </Button>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  {/* facebook profile add running  */}
+                  <div className="overflow-x-auto mb-12">
+                    <div className="bg-gray-900 text-white p-4 rounded-t-lg">
+                      <h3 className="text-xl font-bold flex items-center">
+                        <span className="text-primary mr-2">•</span> Facebook
+                        Profiles for Ad Running
+                      </h3>
+                    </div>
+
+                    <table className="w-full border-collapse">
+                      <thead className="bg-gray-800 text-white">
+                        <tr>
+                          <th className="p-3 text-left">Profile Description</th>
+                          <th className="p-3 text-left">Account Age</th>
+                          <th className="p-3 text-left">Friends Count</th>
+                          <th className="p-3 text-left">Region</th>
+                          <th className="p-3 text-left">
+                            Replacement Warranty
+                          </th>
+                          <th className="p-3 text-left">Price</th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white">
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="p-3">
+                            Asian Profile with 20–50+ Friends
+                          </td>
+                          <td className="p-3">1–3 years</td>
+                          <td className="p-3">20–50+</td>
+                          <td className="p-3">Asia</td>
+                          <td className="p-3">7 Days</td>
+                          <td className="p-3 font-bold text-primary">$15</td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="p-3">
+                            Asian Profile with 100–300+ Friends
+                          </td>
+                          <td className="p-3">1–3 years</td>
+                          <td className="p-3">100–300+</td>
+                          <td className="p-3">Asia</td>
+                          <td className="p-3">7 Days</td>
+                          <td className="p-3 font-bold text-primary">$25</td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="p-3">
+                            US/UK Profile with 20–50+ Friends
+                          </td>
+                          <td className="p-3">1–5 years</td>
+                          <td className="p-3">20–50+</td>
+                          <td className="p-3">US/UK</td>
+                          <td className="p-3">7 Days</td>
+                          <td className="p-3 font-bold text-primary">$30</td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="p-3">
+                            US/UK Profile with 100–300+ Friends
+                          </td>
+                          <td className="p-3">1–5 years</td>
+                          <td className="p-3">100–300+</td>
+                          <td className="p-3">US/UK</td>
+                          <td className="p-3">7 Days</td>
+                          <td className="p-3 font-bold text-primary">$50</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <Button
+                          className="w-full"
+                          onClick={() => {
+                            const popupButton = document.querySelector(
+                              ".fixed.bottom-4.right-4"
+                            ) as HTMLButtonElement;
+                            if (popupButton) popupButton.click();
+                          }}
+                        >
+                          Get Started
+                        </Button>
+                      </div>
+                      <div>
+                        <Button
+                          variant="outline"
+                          className="w-full"
+                          onClick={() => {
+                            const popupButton = document.querySelector(
+                              ".fixed.bottom-4.right-4"
+                            ) as HTMLButtonElement;
+                            if (popupButton) popupButton.click();
+                          }}
+                        >
+                          Request Custom Package
+                        </Button>
+                      </div>
                     </div>
                   </div>
 
@@ -1190,7 +1499,7 @@ export function ServiceDetail({ slug }: { slug: string }) {
                             <h3 className="text-xl font-semibold mb-2">
                               {faq.question}
                             </h3>
-                            <p className="text-gray-700">{faq.answer}</p>
+                            <p className="text-gray-700">{parse(faq.answer)}</p>
                           </div>
                         ))}
                       </div>
