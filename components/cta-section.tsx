@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import { WaveBackground } from "@/components/wave-background"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { WaveBackground } from "@/components/wave-background";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function CtaSection() {
   return (
@@ -18,29 +18,34 @@ export function CtaSection() {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Ready to Grow Your Amazon Business?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Ready to Take Your Business to the Next Level?
+          </h2>
           <p className="text-lg md:text-xl text-gray-700 mb-8">
-            Join hundreds of successful brands who have transformed their Amazon presence with our proven strategies.
+            Let’s talk about how we can help you grow with tailored marketing
+            strategies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               size="lg"
-              className="bg-primary hover:bg-secondary text-white rounded-full px-8 py-6 text-lg"
+              className="bg-primary hover:bg-secondary text-white rounded-lg px-8 py-6 text-lg"
               onClick={() => {
-                const popupButton = document.querySelector(".fixed.bottom-4.right-4") as HTMLButtonElement
-                if (popupButton) popupButton.click()
+                const popupButton = document.querySelector(
+                  ".fixed.bottom-4.right-4"
+                ) as HTMLButtonElement;
+                if (popupButton) popupButton.click();
               }}
             >
-              Get a Free Consultation
+              Book Your Free Consultation Now
             </Button>
             <Link href="/case-studies">
-            <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full px-8 py-6 text-lg border-gray-700 text-gray-700 hover:bg-gray-100"
-            >
-              View Case Studies
-            </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-lg px-8 py-6 text-lg border-gray-700 text-gray-700 hover:bg-gray-100"
+              >
+                View Case Studies
+              </Button>
             </Link>
           </div>
 
@@ -65,6 +70,5 @@ export function CtaSection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }
-

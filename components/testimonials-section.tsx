@@ -11,21 +11,21 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "Funnelar transformed our business. Their strategic approach to both organic and paid optimization delivered results beyond our expectations.",
+        "Funnelar.io’s Amazon strategies helped us boost our sales by 40% within three months. The team knows how to make Amazon work for you.",
       author: "Sarah Johnson",
       position: "Marketing Director, Health Essentials",
       image: "/testimonial-1.svg",
     },
     {
       quote:
-        "As a startup, we had one shot to make our product successful. Their expertise in Amazon product launches was invaluable. They helped us achieve results we didn't think were possible.",
+        "Thanks to Funnelar.io, our e-commerce store saw a 3x increase in conversions. Their tailored approach to marketing was a game-changer.",
       author: "Michael Chen",
       position: "Founder, KitchenInnovate",
       image: "/testimonial-2.svg",
     },
     {
       quote:
-        "They helped us transform from a product-focused seller to a true brand on Amazon. Their strategic approach to product expansion allowed us to grow rapidly while increasing our profit margins.",
+        "Their SaaS marketing expertise helped us launch our product with a bang. Funnelar.io’s team knows exactly what works.",
       author: "Jessica Williams",
       position: "CEO, Glow Essentials",
       image: "/testimonial-3.svg",
@@ -37,7 +37,7 @@ export function TestimonialsSection() {
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
- 
+
   const prevTestimonial = () => {
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length
@@ -64,8 +64,7 @@ export function TestimonialsSection() {
             What Our Clients Say
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say
-            about working with Funnelar.
+            Proven success in driving sales and brand growth.
           </p>
         </motion.div>
 
