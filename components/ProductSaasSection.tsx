@@ -15,14 +15,15 @@ export function ProductSaasSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-xl text-gray-700 mb-2">
-              Maximize your product’s market impact with proven sales strategies
-              and digital marketing expertise.
-            </h2>
+            <h2 className="text-xl text-gray-700 mb-2">Product Launchpad</h2>
             <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Product & SaaS Marketing Expertise
             </h3>
             <div className="w-16 h-1 bg-primary mb-8"></div>
+            <p className="text-lg text-gray-700 mb-2">
+              Maximize your product’s market impact with proven sales strategies
+              and digital marketing expertise.
+            </p>
             <p className="text-lg text-gray-700 mb-8">
               From product launches to full sales funnels, we offer strategic
               consulting to elevate your product or SaaS. We'll guide you
