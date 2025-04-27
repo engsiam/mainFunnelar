@@ -16,12 +16,17 @@ export function HeroSection() {
           <ClientOnly
             fallback={
               <div className="max-w-xl">
+                {/* <h2 className="text-xl text-gray-700 mb-2">
+                  Your Marketing Success Starts Here
+                </h2> */}
                 <h1 className="text-5xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
-                Scale Your Amazon Sales with Proven Strategies
+                  Unlock Your Brand’s Potential with Expert Marketing & Amazon
+                  Services
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 mb-8">
-                  We help brands dominate Amazon with expert FBA & FBM services,
-                  high-ROI PPC campaigns, and organic traffic growth strategies.
+                  From scaling your Amazon business to optimizing your entire
+                  e-commerce strategy, we offer personalized marketing solutions
+                  to grow your brand.
                 </p>
                 <div className="h-14 w-48 bg-primary rounded-full"></div>
               </div>
@@ -33,12 +38,17 @@ export function HeroSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="max-w-xl"
             >
+              {/* <h2 className="text-xl text-gray-700 mb-2">
+                Your Marketing Success Starts Here
+              </h2> */}
               <h1 className="text-5xl md:text-4xl font-bold text-gray-900 leading-tight mb-6">
-              Scale Your Amazon Sales with Proven Strategies
+                Unlock Your Brand’s Potential with Expert Marketing & Amazon
+                Services
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8">
-                We help brands dominate Amazon with expert FBA & FBM services,
-                high-ROI PPC campaigns, and organic traffic growth strategies.
+                From scaling your Amazon business to optimizing your entire
+                e-commerce strategy, we offer personalized marketing solutions
+                to grow your brand.
               </p>
               <Button
                 size="lg"
@@ -50,7 +60,7 @@ export function HeroSection() {
                   if (popupButton) popupButton.click();
                 }}
               >
-                Get a Free Consultation
+                Book Your Free Consultation Today
               </Button>
             </motion.div>
           </ClientOnly>

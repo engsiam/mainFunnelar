@@ -7,6 +7,8 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { CtaSection } from "@/components/cta-section"
 import { Footer } from "@/components/footer"
 import { PopupForm } from "@/components/popup-form"
+import { EcommerceStrategySection } from "@/components/EcommerceStrategySection"
+import { ProductSaasSection } from "@/components/ProductSaasSection"
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <VisibilitySection />
+      <EcommerceStrategySection />
+      <ProductSaasSection/>
       <ServicesHighlights />
       <BenefitsSection />
       <TestimonialsSection />

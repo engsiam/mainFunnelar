@@ -34,18 +34,23 @@ export function VisibilitySection() {
                 <div className="relative w-full h-[400px] rounded-lg overflow-hidden bg-purple-100"></div>
               </div>
               <div className="order-1 md:order-2">
-                <h2 className="text-xl text-gray-700 mb-2">
-                  Get on the First Page
-                </h2>
+                {/* <h2 className="text-xl text-gray-700 mb-2">
+                  Amazon Growth & Optimization
+                </h2> */}
                 <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
-                  Visibility is Key to Amazon Success
+                  VAmazon Growth & Optimization
                 </h3>
                 <div className="w-16 h-1 bg-primary mb-6"></div>
                 <p className="text-lg text-gray-700 mb-6">
-                Think of Amazon like a vast supermarket, similar to Walmart. Just as products on the front shelves grab attention, your Amazon product listing needs prime visibility to succeed.
+                  Unlock the full potential of your Amazon store with expert
+                  product listing optimization, PPC management, and brand growth
+                  strategies.
                 </p>
                 <p className="text-lg text-gray-700">
-                Our proven SEO strategies ensure your products appear where customers are looking, driving more traffic and increasing sales potential."
+                  We specialize in increasing Amazon visibility and sales with
+                  customized strategies for product listings, PPC campaigns, and
+                  A+ content creation. Let us help you drive more traffic,
+                  increase conversions, and boost profitability.
                 </p>
               </div>
             </div>
@@ -71,18 +76,23 @@ export function VisibilitySection() {
             </motion.div>
 
             <motion.div variants={itemVariants} className="order-1 md:order-2">
-              <h2 className="text-xl text-gray-700 mb-2">
-                Get on the First Page
-              </h2>
+              {/* <h2 className="text-xl text-gray-700 mb-2">
+                Amazon Growth & Optimization
+              </h2> */}
               <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
-                Visibility is Key to Amazon Success
+                Amazon Growth & Optimization
               </h3>
               <div className="w-16 h-1 bg-primary mb-6"></div>
               <p className="text-lg text-gray-700 mb-6">
-              Think of Amazon like a vast supermarket, similar to Walmart. Just as products on the front shelves grab attention, your Amazon product listing needs prime visibility to succeed.
+                Unlock the full potential of your Amazon store with expert
+                product listing optimization, PPC management, and brand growth
+                strategies.
               </p>
               <p className="text-lg text-gray-700">
-              Our proven SEO strategies ensure your products appear where customers are looking, driving more traffic and increasing sales potential."
+                We specialize in increasing Amazon visibility and sales with
+                customized strategies for product listings, PPC campaigns, and
+                A+ content creation. Let us help you drive more traffic,
+                increase conversions, and boost profitability.
               </p>
             </motion.div>
           </motion.div>

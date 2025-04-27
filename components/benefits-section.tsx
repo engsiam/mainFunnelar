@@ -23,7 +23,7 @@ export function BenefitsSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Funnelar.io for Amazon Success?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Us?</h2>
             <p className="text-lg text-gray-700 mb-8">
             Our team of Amazon specialists stays ahead of marketplace trends to ensure your business maintains a competitive edge. <strong>From Amazon SEO</strong> and <strong>PPC management</strong> to organic traffic growth and <strong>Shopify theme development</strong>,we provide tailored solutions to help you succeed.
             </p>
