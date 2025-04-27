@@ -13,6 +13,7 @@ const EXPIRY_DAYS = 30; // <--- You can change this
 
 export function TimedPopup() {
   const [isOpen, setIsOpen] = useState(false);
+  const [hasShown, setHasShown] = useState(false);
   const {
     formData,
     isSubmitting,
@@ -24,23 +25,22 @@ export function TimedPopup() {
   } = useConsultationForm();
 
   useEffect(() => {
-    const submissionData = localStorage.getItem("popupSubmitted");
-
-    if (submissionData) {
-      const { timestamp } = JSON.parse(submissionData);
+    const popupData = localStorage.getItem("popupSubmitted");
+    if (popupData) {
+      const { timestamp, status } = JSON.parse(popupData);
       const now = new Date().getTime();
-      const diffDays = (now - timestamp) / (1000 * 60 * 60 * 24);
 
-      if (diffDays >= EXPIRY_DAYS) {
-        localStorage.removeItem("popupSubmitted"); // Expired, allow showing again
-      } else {
-        return; // Submitted recently, don't show popup
+      // Only re-show if 30 days have passed
+      if (now - timestamp < EXPIRY_DAYS * 24 * 60 * 60 * 1000) {
+        setHasShown(true);
+        return;
       }
     }
 
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 4000); // 4 seconds
+      setHasShown(true);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -148,13 +148,31 @@ export function TimedPopup() {
                     again.
                   </p>
                 )}
-                <Button
-                  type="submit"
-                  className="w-full"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Submitting..." : "Get Free Consultation"}
-                </Button>
+                <div className="flex flex-col space-y-2 mt-4">
+                  <Button
+                    type="submit"
+                    className="w-full"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Submitting..." : "Get Free Consultation"}
+                  </Button>
+                  <Button
+                    variant="outline"
+                    className="w-full"
+                    onClick={() => {
+                      localStorage.setItem(
+                        "popupSubmitted",
+                        JSON.stringify({
+                          timestamp: new Date().getTime(),
+                          status: "dismissed",
+                        })
+                      );
+                      setIsOpen(false);
+                    }}
+                  >
+                    Don't show again
+                  </Button>
+                </div>
               </form>
             )}
           </motion.div>
