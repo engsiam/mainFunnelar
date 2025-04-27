@@ -52,7 +52,7 @@ export function HeroSection() {
               </p>
               <Button
                 size="lg"
-                className="bg hover:bg-secondary text-white rounded-full px-8 py-6 text-lg"
+                className="bg hover:bg-secondary text-white rounded-lg px-8 py-6 text-lg"
                 onClick={() => {
                   const popupButton = document.querySelector(
                     ".fixed.bottom-4.right-4"
