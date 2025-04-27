@@ -36,6 +36,7 @@ interface ServiceData {
   image: string;
   icon: string;
   aiImagePrompt?: string;
+  bottomText?: string; // Added the bottomText property
 }
 
 export function ServiceDetail({ slug }: { slug: string }) {
@@ -1205,7 +1206,7 @@ Fast delivery, full control, and 24/7 support — everything you need to win wit
                         Final Worlds
                       </h2>
                       <p className="text-lg text-gray-700 mb-8">
-                        {parse(service.bottomText)}
+                        {parse(service.bottomText ?? '')}
                       </p>
                     </div>
                   </div>
