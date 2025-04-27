@@ -3,6 +3,7 @@
 import ClientOnly from "@/components/client-only";
 import { FallbackImage } from "@/components/fallback-image";
 import { motion } from "framer-motion";
+import { Button } from "./ui/button";
 
 export function VisibilitySection() {
   const containerVariants = {
@@ -38,7 +39,7 @@ export function VisibilitySection() {
                   Amazon Growth & Optimization
                 </h2> */}
                 <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
-                  VAmazon Growth & Optimization
+                  Amazon Growth & Optimization
                 </h3>
                 <div className="w-16 h-1 bg-primary mb-6"></div>
                 <p className="text-lg text-gray-700 mb-6">
@@ -52,6 +53,18 @@ export function VisibilitySection() {
                   A+ content creation. Let us help you drive more traffic,
                   increase conversions, and boost profitability.
                 </p>
+                <Button
+                  size="lg"
+                  className="bg hover:bg-secondary text-white rounded-lg px-8 py-6 text-lg"
+                  onClick={() => {
+                    const popupButton = document.querySelector(
+                      ".fixed.bottom-4.right-4"
+                    ) as HTMLButtonElement;
+                    if (popupButton) popupButton.click();
+                  }}
+                >
+                  Talk to a Product Marketing Specialist
+                </Button>
               </div>
             </div>
           }
@@ -88,12 +101,24 @@ export function VisibilitySection() {
                 product listing optimization, PPC management, and brand growth
                 strategies.
               </p>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 mb-8">
                 We specialize in increasing Amazon visibility and sales with
                 customized strategies for product listings, PPC campaigns, and
                 A+ content creation. Let us help you drive more traffic,
                 increase conversions, and boost profitability.
               </p>
+              <Button
+                size="lg"
+                className="bg hover:bg-secondary text-white rounded-lg px-8 py-6 text-lg"
+                onClick={() => {
+                  const popupButton = document.querySelector(
+                    ".fixed.bottom-4.right-4"
+                  ) as HTMLButtonElement;
+                  if (popupButton) popupButton.click();
+                }}
+              >
+                Get a Free Amazon Audit
+              </Button>
             </motion.div>
           </motion.div>
         </ClientOnly>

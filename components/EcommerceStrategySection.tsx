@@ -83,7 +83,7 @@ export function EcommerceStrategySection() {
               <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                 E-Commerce Marketing Strategy
               </h3>
-              <div class="w-16 h-1 bg-primary mb-6"></div>
+              <div className="w-16 h-1 bg-primary mb-6"></div>
               <p className="text-gray-700 mb-6">
                 Comprehensive marketing services designed to grow your online
                 store and customer base.
