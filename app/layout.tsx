@@ -18,6 +18,10 @@ export const metadata: Metadata = {
   title: "Funnelar - Amazon Marketing Experts",
   description:
     "Delivering stunning brands, relatable products, & results oriented marketing strategy & execution",
+  keywords: ["Amazon Marketing", "Amazon PPC", "Amazon SEO", "Amazon Advertising"],
+  icons: {
+    icon: "/favicon.png",
+  }
 };
 
 export default function RootLayout({
