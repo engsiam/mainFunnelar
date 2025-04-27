@@ -1,35 +1,66 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { X, Check } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { useConsultationForm } from "@/hooks/use-consultation-form"
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { useConsultationForm } from "@/hooks/use-consultation-form";
+import { AnimatePresence, motion } from "framer-motion";
+import { Check, X } from "lucide-react";
+import { useEffect, useState } from "react";
+
+const EXPIRY_DAYS = 30; // <--- You can change this
 
 export function TimedPopup() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [hasShown, setHasShown] = useState(false)
-  const { formData, isSubmitting, isSuccess, isError, handleChange, handleSubmit, resetForm } = useConsultationForm()
+  const [isOpen, setIsOpen] = useState(false);
+  const {
+    formData,
+    isSubmitting,
+    isSuccess,
+    isError,
+    handleChange,
+    handleSubmit,
+    resetForm,
+  } = useConsultationForm();
 
   useEffect(() => {
-    // Only show the popup once per session
-    if (!hasShown) {
-      const timer = setTimeout(() => {
-        setIsOpen(true)
-        setHasShown(true)
-      }, 4000) // 4 seconds
+    const submissionData = localStorage.getItem("popupSubmitted");
 
-      return () => clearTimeout(timer)
+    if (submissionData) {
+      const { timestamp } = JSON.parse(submissionData);
+      const now = new Date().getTime();
+      const diffDays = (now - timestamp) / (1000 * 60 * 60 * 24);
+
+      if (diffDays >= EXPIRY_DAYS) {
+        localStorage.removeItem("popupSubmitted"); // Expired, allow showing again
+      } else {
+        return; // Submitted recently, don't show popup
+      }
     }
-  }, [hasShown])
+
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+    }, 4000); // 4 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    if (isSuccess) {
+      localStorage.setItem(
+        "popupSubmitted",
+        JSON.stringify({
+          timestamp: new Date().getTime(),
+        })
+      );
+      setIsOpen(false);
+    }
+  }, [isSuccess]);
 
   const closePopup = () => {
-    setIsOpen(false)
-    if (isSuccess) resetForm()
-  }
+    setIsOpen(false);
+    if (isSuccess) resetForm();
+  };
 
   return (
     <AnimatePresence>
@@ -49,7 +80,9 @@ export function TimedPopup() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex justify-between items-center mb-6">
-              <h2 className="text-2xl font-bold">Grow Your Amazon Business Today</h2>
+              <h2 className="text-2xl font-bold">
+                Grow Your Amazon Business Today
+              </h2>
               <Button variant="ghost" size="icon" onClick={closePopup}>
                 <X className="h-6 w-6" />
               </Button>
@@ -61,7 +94,9 @@ export function TimedPopup() {
                   <Check className="h-6 w-6 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Thank You!</h3>
-                <p className="text-gray-600">We've received your request and will get back to you shortly.</p>
+                <p className="text-gray-600">
+                  We've received your request and will get back to you shortly.
+                </p>
                 <Button onClick={closePopup} className="mt-6">
                   Close
                 </Button>
@@ -69,8 +104,9 @@ export function TimedPopup() {
             ) : (
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <p className="text-gray-600 mb-4">
-                  Ready to take your Amazon business to the next level? Fill out this form for a free consultation with
-                  our experts at Funnelar.
+                  Ready to take your Amazon business to the next level? Fill out
+                  this form for a free consultation with our experts at
+                  Funnelar.
                 </p>
                 <div>
                   <Label htmlFor="popup-name">Name</Label>
@@ -107,9 +143,16 @@ export function TimedPopup() {
                   />
                 </div>
                 {isError && (
-                  <p className="text-red-500 text-sm">There was an error submitting your request. Please try again.</p>
+                  <p className="text-red-500 text-sm">
+                    There was an error submitting your request. Please try
+                    again.
+                  </p>
                 )}
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                <Button
+                  type="submit"
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
                   {isSubmitting ? "Submitting..." : "Get Free Consultation"}
                 </Button>
               </form>
@@ -118,6 +161,5 @@ export function TimedPopup() {
         </motion.div>
       )}
     </AnimatePresence>
-  )
+  );
 }
-

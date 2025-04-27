@@ -36,7 +36,10 @@ interface ServiceData {
   image: string;
   icon: string;
   aiImagePrompt?: string;
-  bottomText?: string; // Added the bottomText property
+  bottomBody?: {
+    title: string;
+    description: string;
+  }[];
 }
 
 export function ServiceDetail({ slug }: { slug: string }) {
@@ -783,10 +786,15 @@ Buy a Reinstated Facebook Ads Account that was previously restricted but has now
             ],
           },
         ],
-        bottomText: `<h2 class="text-lg font-semibold my-4">Ready to advertise without limits?
+        bottomBody: [
+          {
+            title: "Final Worlds",
+            description: `<h2 class="text-lg font-semibold my-4">Ready to advertise without limits?
 </h2>
         <p>Get your Verified Business Manager today and start scaling with confidence.
 Fast delivery, full control, and 24/7 support — everything you need to win with Facebook ads.</p>`,
+          },
+        ],
       },
     };
 
@@ -1201,13 +1209,17 @@ Fast delivery, full control, and 24/7 support — everything you need to win wit
                         </Button>
                       </div>
                     </div>
-                    <div className="py-8">
-                      <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                        Final Worlds
-                      </h2>
-                      <p className="text-lg text-gray-700 mb-8">
-                        {parse(service.bottomText ?? '')}
-                      </p>
+                    <div className="pt-8">
+                      {service.bottomBody?.map((item, index) => (
+                        <>
+                          <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                            {item.title}
+                          </h2>
+                          <p className="text-lg text-gray-700 mb-8">
+                            {parse(item.description)}
+                          </p>
+                        </>
+                      ))}
                     </div>
                   </div>
 
