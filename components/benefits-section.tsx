@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { CheckCircle } from "lucide-react"
+import { motion } from "framer-motion";
+import { Button } from "./ui/button";
 
 export function BenefitsSection() {
   const benefits = [
@@ -11,7 +11,7 @@ export function BenefitsSection() {
     "Build trust and long-term relationships with your audience through targeted strategies.",
     "Stay ahead of trends with insights derived from comprehensive data analytics.",
     "Adapt seamlessly to evolving marketplace dynamics with continuous improvement.",
-  ]
+  ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-[#FC9F59] to-[#F9E0A6] relative overflow-hidden">
@@ -23,12 +23,27 @@ export function BenefitsSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Why Choose Us?</h2>
-            <p className="text-lg text-gray-700 mb-8">
-            Our team of Amazon specialists stays ahead of marketplace trends to ensure your business maintains a competitive edge. <strong>From Amazon SEO</strong> and <strong>PPC management</strong> to organic traffic growth and <strong>Shopify theme development</strong>,we provide tailored solutions to help you succeed.
-            </p>
+            <h3 className="text-xl text-gray-700 mb-2">
+              Expert Strategies, Real Results
+            </h3>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Why Funnelar.io?
+            </h2>
 
-            <ul className="space-y-4">
+            <p className="text-lg text-gray-700 mb-8">
+              With a strong focus on Amazon services and e-commerce, Funnelar.io
+              provides results-driven strategies that increase visibility,
+              sales, and customer engagement. Our team brings years of
+              experience and a data-driven approach to every project. We turn
+              your marketing goals into measurable results.
+            </p>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-secondary text-white rounded-full px-8 py-6 text-lg"
+            >
+              Get Started Today
+            </Button>
+            {/* <ul className="space-y-4">
               {benefits.map((benefit, index) => (
                 <motion.li
                   key={index}
@@ -42,7 +57,7 @@ export function BenefitsSection() {
                   <span className="text-gray-700">{benefit}</span>
                 </motion.li>
               ))}
-            </ul>
+            </ul> */}
           </motion.div>
 
           <motion.div
@@ -52,7 +67,9 @@ export function BenefitsSection() {
             viewport={{ once: true }}
             className="bg-white rounded-lg shadow-xl p-8"
           >
-            <h3 className="text-2xl font-semibold mb-6">Our Performance Metrics</h3>
+            <h3 className="text-2xl font-semibold mb-6">
+              Our Performance Metrics
+            </h3>
             <div className="space-y-6">
               <div>
                 <div className="flex justify-between mb-2">
@@ -60,17 +77,25 @@ export function BenefitsSection() {
                   <span className="text-primary font-semibold">215%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: "85%" }}></div>
+                  <div
+                    className="bg-primary h-2 rounded-full"
+                    style={{ width: "85%" }}
+                  ></div>
                 </div>
               </div>
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-medium">Conversion Rate Improvement</span>
+                  <span className="font-medium">
+                    Conversion Rate Improvement
+                  </span>
                   <span className="text-primary font-semibold">68%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: "68%" }}></div>
+                  <div
+                    className="bg-primary h-2 rounded-full"
+                    style={{ width: "68%" }}
+                  ></div>
                 </div>
               </div>
 
@@ -80,7 +105,10 @@ export function BenefitsSection() {
                   <span className="text-primary font-semibold">32%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: "32%" }}></div>
+                  <div
+                    className="bg-primary h-2 rounded-full"
+                    style={{ width: "32%" }}
+                  ></div>
                 </div>
               </div>
 
@@ -90,7 +118,10 @@ export function BenefitsSection() {
                   <span className="text-primary font-semibold">98%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-primary h-2 rounded-full" style={{ width: "98%" }}></div>
+                  <div
+                    className="bg-primary h-2 rounded-full"
+                    style={{ width: "98%" }}
+                  ></div>
                 </div>
               </div>
             </div>
@@ -98,6 +129,5 @@ export function BenefitsSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
