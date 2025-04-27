@@ -1107,7 +1107,7 @@ Fast delivery, full control, and 24/7 support — everything you need to win wit
                     </div>
                   </div>
                   {/* facebook profile add running  */}
-                  <div className="overflow-x-auto mb-12">
+                  <div className="overflow-x-auto">
                     <div className="bg-gray-900 text-white p-4 rounded-t-lg">
                       <h3 className="text-xl font-bold flex items-center">
                         <span className="text-primary mr-2">•</span> Facebook
@@ -1200,6 +1200,14 @@ Fast delivery, full control, and 24/7 support — everything you need to win wit
                         </Button>
                       </div>
                     </div>
+                    <div className="py-8">
+                      <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                        Final Worlds
+                      </h2>
+                      <p className="text-lg text-gray-700 mb-8">
+                        {parse(service.bottomText)}
+                      </p>
+                    </div>
                   </div>
 
                   {/* FAQs */}
@@ -1245,14 +1253,6 @@ Fast delivery, full control, and 24/7 support — everything you need to win wit
                       ))}
                     </div>
                   )}
-                </div>
-                <div className="p-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                    Final Worlds
-                  </h2>
-                  <p className="text-lg text-gray-700 mb-8">
-                    {parse(service.bottomText)}
-                  </p>
                 </div>
               </div>
             </motion.div>
