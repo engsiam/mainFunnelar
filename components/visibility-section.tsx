@@ -35,9 +35,9 @@ export function VisibilitySection() {
                 <div className="relative w-full h-[400px] rounded-lg overflow-hidden bg-purple-100"></div>
               </div>
               <div className="order-1 md:order-2">
-                {/* <h2 className="text-xl text-gray-700 mb-2">
-                  Amazon Growth & Optimization
-                </h2> */}
+                <h2 className="text-xl text-gray-700 mb-2">
+                  Amazon Accelerator
+                </h2>
                 <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                   Amazon Growth & Optimization
                 </h3>
@@ -89,9 +89,7 @@ export function VisibilitySection() {
             </motion.div>
 
             <motion.div variants={itemVariants} className="order-1 md:order-2">
-              {/* <h2 className="text-xl text-gray-700 mb-2">
-                Amazon Growth & Optimization
-              </h2> */}
+              <h2 className="text-xl text-gray-700 mb-2">Amazon Accelerator</h2>
               <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                 Amazon Growth & Optimization
               </h3>
