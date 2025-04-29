@@ -24,9 +24,7 @@ export function HeroSection() {
                   Services
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 mb-8">
-                  From scaling your Amazon business to optimizing your entire
-                  e-commerce strategy, we offer personalized marketing solutions
-                  to grow your brand.
+                From scaling your Amazon business to optimizing your entire e-commerce strategy, we use our unique Funnelar system — a next-gen marketing funnel model — to deliver results that matter.
                 </p>
                 <div className="h-14 w-48 bg-primary rounded-full"></div>
               </div>
@@ -46,9 +44,7 @@ export function HeroSection() {
                 Services
               </h1>
               <p className="text-lg md:text-xl text-gray-700 mb-8">
-                From scaling your Amazon business to optimizing your entire
-                e-commerce strategy, we offer personalized marketing solutions
-                to grow your brand.
+              From scaling your Amazon business to optimizing your entire e-commerce strategy, we use our unique Funnelar system — a next-gen marketing funnel model — to deliver results that matter.
               </p>
               <Button
                 size="lg"

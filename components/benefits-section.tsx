@@ -23,23 +23,25 @@ export function BenefitsSection() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-xl text-gray-700 mb-2">
+            {/* <h3 className="text-xl text-gray-700 mb-2">
               Expert Strategies, Real Results
-            </h3>
+            </h3> */}
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Why Funnelar.io?
+              Why Choose Us?
             </h2>
-
+            <p className="text-lg text-gray-700 mb-2">
+              Because we don’t just market — we build better funnels.
+            </p>
             <p className="text-lg text-gray-700 mb-8">
-              With a strong focus on Amazon services and e-commerce, Funnelar.io
-              provides results-driven strategies that increase visibility,
-              sales, and customer engagement. Our team brings years of
-              experience and a data-driven approach to every project. We turn
-              your marketing goals into measurable results.
+              At Funnelar.io, we use our proprietary Funnelar system — a smarter
+              type of marketing funnel — to drive real results. With a focus on
+              Amazon growth, e-commerce, and product marketing, we help brands
+              thrive through structured, strategic, and scalable funnel-based
+              solutions.
             </p>
             <Button
               size="lg"
-              className="bg-primary hover:bg-secondary text-white rounded-full px-8 py-6 text-lg"
+              className="bg-primary hover:bg-secondary text-white rounded-lg px-8 py-6 text-lg"
             >
               Get Started Today
             </Button>

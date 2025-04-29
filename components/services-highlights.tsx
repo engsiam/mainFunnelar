@@ -69,11 +69,11 @@ export function ServicesHighlights() {
               <div className="flex justify-center">{service.icon}</div>
               <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
-              <Link href={service.link}>
+              {/* <Link href={service.link}>
                 <Button variant="outline" className="rounded-full">
                   Learn More
                 </Button>
-              </Link>
+              </Link> */}
             </motion.div>
           ))}
         </div>

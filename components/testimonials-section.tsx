@@ -11,21 +11,21 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "Funnelar.io’s Amazon strategies helped us boost our sales by 40% within three months. The team knows how to make Amazon work for you.",
+        "Funnelar.io’s Amazon strategies helped us boost our sales by 40% within three months. The team knows how to build a funnel that actually converts.",
       author: "Sarah Johnson",
       position: "Marketing Director, Health Essentials",
       image: "/testimonial-1.svg",
     },
     {
       quote:
-        "Thanks to Funnelar.io, our e-commerce store saw a 3x increase in conversions. Their tailored approach to marketing was a game-changer.",
+        "Thanks to Funnelar.io, our e-commerce store saw a 3x increase in conversions. Their Funnelar method is a game-changer.",
       author: "Michael Chen",
       position: "Founder, KitchenInnovate",
       image: "/testimonial-2.svg",
     },
     {
       quote:
-        "Their SaaS marketing expertise helped us launch our product with a bang. Funnelar.io’s team knows exactly what works.",
+        "Their SaaS marketing expertise and Funnelar system helped us launch with confidence. We saw traction right from day one.",
       author: "Jessica Williams",
       position: "CEO, Glow Essentials",
       image: "/testimonial-3.svg",
@@ -61,10 +61,10 @@ export function TestimonialsSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Clients Say
+            Client Testimonials
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Proven success in driving sales and brand growth.
+            Real success stories built with Funnelar precision.
           </p>
         </motion.div>
 

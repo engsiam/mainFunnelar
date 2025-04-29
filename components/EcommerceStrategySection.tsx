@@ -80,20 +80,21 @@ export function EcommerceStrategySection() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-            <h2 className="text-xl text-gray-700 mb-2">E-Com Expansion
-            </h2>
+              <h2 className="text-xl text-gray-700 mb-2">E-Com Expansion</h2>
               <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                 E-Commerce Marketing Strategy
               </h3>
               <div className="w-16 h-1 bg-primary mb-6"></div>
               <p className="text-gray-700 mb-6">
-                Comprehensive marketing services designed to grow your online
-                store and customer base.
+                A tailored Funnelar for your online store — built to convert
+                traffic into loyal customers.
               </p>
               <p className="text-gray-700 mb-6">
-                Whether you're on Shopify, WooCommerce, or any other platform,
-                we provide tailored e-commerce marketing strategies to optimize
-                your product sales, customer engagement, and brand recognition.
+                No matter your platform — Shopify, WooCommerce, or others — our
+                Funnelar-based strategies align your customer journey from
+                awareness to repeat purchase. Every campaign is backed by data,
+                creativity, and strategic funnel design to ensure maximum return
+                on investment.
               </p>
 
               <Button

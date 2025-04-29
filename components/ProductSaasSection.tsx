@@ -21,14 +21,14 @@ export function ProductSaasSection() {
             </h3>
             <div className="w-16 h-1 bg-primary mb-8"></div>
             <p className="text-lg text-gray-700 mb-2">
-              Maximize your product’s market impact with proven sales strategies
-              and digital marketing expertise.
+              Launch smarter with Funnelar — the strategic system designed for
+              high-impact products.
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              From product launches to full sales funnels, we offer strategic
-              consulting to elevate your product or SaaS. We'll guide you
-              through targeted marketing campaigns, sales optimization, and
-              customer retention strategies to drive long-term growth.
+              Whether you’re releasing a new product or scaling a SaaS brand,
+              our Funnelar approach helps you craft effective campaigns, build
+              buyer trust, and retain customers. We guide your product through
+              every stage of the funnel — from awareness to action and beyond.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-10">

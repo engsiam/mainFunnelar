@@ -36,22 +36,21 @@ export function VisibilitySection() {
               </div>
               <div className="order-1 md:order-2">
                 <h2 className="text-xl text-gray-700 mb-2">
-                  Amazon Accelerator
+                  Amazon Powerhouse
                 </h2>
                 <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                   Amazon Growth & Optimization
                 </h3>
                 <div className="w-16 h-1 bg-primary mb-6"></div>
                 <p className="text-lg text-gray-700 mb-6">
-                  Unlock the full potential of your Amazon store with expert
-                  product listing optimization, PPC management, and brand growth
-                  strategies.
+                  Unleash the full power of your Amazon store with our proven
+                  Funnelar method.
                 </p>
                 <p className="text-lg text-gray-700">
-                  We specialize in increasing Amazon visibility and sales with
-                  customized strategies for product listings, PPC campaigns, and
-                  A+ content creation. Let us help you drive more traffic,
-                  increase conversions, and boost profitability.
+                  We don’t just optimize listings — we apply our signature
+                  Funnelar framework to every Amazon growth campaign. From
+                  SEO-driven product listings to precision PPC and A+ content,
+                  we build a funnel that attracts, converts, and scales.
                 </p>
                 <Button
                   size="lg"
@@ -89,21 +88,20 @@ export function VisibilitySection() {
             </motion.div>
 
             <motion.div variants={itemVariants} className="order-1 md:order-2">
-              <h2 className="text-xl text-gray-700 mb-2">Amazon Accelerator</h2>
+              <h2 className="text-xl text-gray-700 mb-2">Amazon Powerhouse</h2>
               <h3 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
                 Amazon Growth & Optimization
               </h3>
               <div className="w-16 h-1 bg-primary mb-6"></div>
               <p className="text-lg text-gray-700 mb-6">
-                Unlock the full potential of your Amazon store with expert
-                product listing optimization, PPC management, and brand growth
-                strategies.
+                Unleash the full power of your Amazon store with our proven
+                Funnelar method.
               </p>
               <p className="text-lg text-gray-700 mb-8">
-                We specialize in increasing Amazon visibility and sales with
-                customized strategies for product listings, PPC campaigns, and
-                A+ content creation. Let us help you drive more traffic,
-                increase conversions, and boost profitability.
+                We don’t just optimize listings — we apply our signature
+                Funnelar framework to every Amazon growth campaign. From
+                SEO-driven product listings to precision PPC and A+ content, we
+                build a funnel that attracts, converts, and scales.
               </p>
               <Button
                 size="lg"
