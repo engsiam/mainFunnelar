@@ -85,12 +85,12 @@ export function EcommerceStrategySection() {
                 E-Commerce Marketing Strategy
               </h3>
               <div className="w-16 h-1 bg-primary mb-6"></div>
-              <p className="text-gray-700 mb-6">
-                A tailored Funnelar for your online store — built to convert
+              <p className="text-lg text-gray-700 mb-6">
+                A tailored Funnelar for your online store built to convert
                 traffic into loyal customers.
               </p>
-              <p className="text-gray-700 mb-6">
-                No matter your platform — Shopify, WooCommerce, or others — our
+              <p className="text-lg text-gray-700 mb-6">
+                No matter your platform Shopify, WooCommerce,or others our
                 Funnelar-based strategies align your customer journey from
                 awareness to repeat purchase. Every campaign is backed by data,
                 creativity, and strategic funnel design to ensure maximum return

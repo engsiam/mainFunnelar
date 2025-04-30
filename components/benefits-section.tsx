@@ -33,8 +33,8 @@ export function BenefitsSection() {
               Because we don’t just market — we build better funnels.
             </p>
             <p className="text-lg text-gray-700 mb-8">
-              At Funnelar.io, we use our proprietary Funnelar system — a smarter
-              type of marketing funnel — to drive real results. With a focus on
+              At Funnelar.io, we use our proprietary Funnelar system a smarter
+              type of marketing funnel to drive real results. With a focus on
               Amazon growth, e-commerce, and product marketing, we help brands
               thrive through structured, strategic, and scalable funnel-based
               solutions.

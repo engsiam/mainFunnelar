@@ -47,10 +47,10 @@ export function VisibilitySection() {
                   Funnelar method.
                 </p>
                 <p className="text-lg text-gray-700">
-                  We don’t just optimize listings — we apply our signature
+                  We don’t just optimize listings, we apply our signature
                   Funnelar framework to every Amazon growth campaign. From
                   SEO-driven product listings to precision PPC and A+ content,
-                  we build a funnel that attracts, converts, and scales.
+                  we build a funnel that attracts, converts, and scales
                 </p>
                 <Button
                   size="lg"
@@ -98,10 +98,10 @@ export function VisibilitySection() {
                 Funnelar method.
               </p>
               <p className="text-lg text-gray-700 mb-8">
-                We don’t just optimize listings — we apply our signature
-                Funnelar framework to every Amazon growth campaign. From
-                SEO-driven product listings to precision PPC and A+ content, we
-                build a funnel that attracts, converts, and scales.
+                We don’t just optimize listings we apply our signature Funnelar
+                framework to every Amazon growth campaign.From SEO-driven
+                product listings to precision PPC and A+ content, we build a
+                funnel that attracts,converts, and scales.
               </p>
               <Button
                 size="lg"

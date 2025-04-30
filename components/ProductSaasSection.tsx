@@ -21,14 +21,14 @@ export function ProductSaasSection() {
             </h3>
             <div className="w-16 h-1 bg-primary mb-8"></div>
             <p className="text-lg text-gray-700 mb-2">
-              Launch smarter with Funnelar — the strategic system designed for
+              Launch smarter with Funnelar the strategic system designed for
               high-impact products.
             </p>
             <p className="text-lg text-gray-700 mb-8">
               Whether you’re releasing a new product or scaling a SaaS brand,
               our Funnelar approach helps you craft effective campaigns, build
               buyer trust, and retain customers. We guide your product through
-              every stage of the funnel — from awareness to action and beyond.
+              every stage of the funnel from awareness to action and beyond.
             </p>
 
             <div className="grid grid-cols-2 gap-6 mb-10">
